@@ -1,3 +1,22 @@
 .app {
-  background-color: #80807f;
+  background-color: var(--bg-1);
+  animation: rotateBackgrounColor 25s linear infinite;
+}
+
+@keyframes rotateBackgrounColor {
+  0% {
+    background-color: var(--bg-1);
+  }
+  25% {
+    background-color: var(--bg-2);
+  }
+  50% {
+    background-color: var(--bg-3);
+  }
+  75% {
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  100% {
+    background-color: var(--bg-1);
+  }
 }
