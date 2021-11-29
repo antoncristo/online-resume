@@ -4,8 +4,9 @@ body {
 }
 
 :root {
-  --text: #66cffc;
-  --bg-main: #679798;
+  --bg-1: #80807f;
+  --bg-2: #679798;
+  --bg-3: #02587d;
 }
 
 @font-face {
