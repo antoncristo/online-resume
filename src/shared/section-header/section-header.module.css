@@ -1,0 +1,19 @@
+.sectionHeader {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: #fff;
+  text-shadow: 1px 0px 2px rgba(0, 0, 0, 0.6);
+  font-family: "outfit-600";
+  font-size: 40px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (max-width: 1600px) {
+  .sectionHeader {
+    height: 60px;
+    font-size: 24px;
+  }
+}

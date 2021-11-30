@@ -1,6 +1,5 @@
 .app {
-  background-color: var(--bg-1);
-  animation: rotateBackgrounColor 25s linear infinite;
+  animation: rotateBackgrounColor 30s linear infinite;
 }
 
 @keyframes rotateBackgrounColor {
@@ -14,7 +13,7 @@
     background-color: var(--bg-3);
   }
   75% {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: var(--bg-4);
   }
   100% {
     background-color: var(--bg-1);

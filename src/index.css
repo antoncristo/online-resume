@@ -7,6 +7,11 @@ body {
   --bg-1: #80807f;
   --bg-2: #679798;
   --bg-3: #02587d;
+  --bg-4: #9a78ba;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 @font-face {
