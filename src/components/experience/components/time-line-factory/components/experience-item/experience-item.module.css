@@ -1,0 +1,24 @@
+.experienceItem {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  border-radius: 4px;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.durationAtCompany {
+  font-family: "outfit-500";
+  font-size: 20px;
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+.experienceContent {
+  display: flex;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .experienceContent {
+    flex-direction: column;
+  }
+}

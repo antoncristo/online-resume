@@ -1,0 +1,37 @@
+.timeLineDot {
+  position: relative;
+  height: 100px;
+  width: 50px;
+}
+.dot {
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+  top: calc(60% - 25px);
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.innerDot {
+  width: 50%;
+  aspect-ratio: 1/1;
+  background-color: var(--bg-4);
+  border-radius: 50%;
+}
+.dot:hover {
+  transform: scale(1.1, 1.1);
+}
+.pipe {
+  position: absolute;
+  left: calc(50% - 10px);
+  width: 20px;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.checkpointColor {
+  background-color: var(--bg-3);
+}
