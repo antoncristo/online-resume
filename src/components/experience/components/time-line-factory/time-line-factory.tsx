@@ -9,6 +9,7 @@ import {
   TimeLineDot,
   CheckpointItem,
   ExperienceItemComponent,
+  DirectionHelper,
 } from "./components";
 
 import classes from "./time-line-factory.module.css";
@@ -25,10 +26,14 @@ export const TimeLineFactory = (props: TimeLineFactoryProps) => {
   };
 
   const _isCheckpoint = isCheckpointItemType();
+  const _isLastItem =
+    isCheckpointItemType() &&
+    (timeLineItem as TimeLineItem<Checkpoint>).content.checkpoint === "Today";
 
   return (
     <div className={classes.timeLineFactory}>
       <TimeLineDot isCheckpoint={_isCheckpoint} />
+      {_isLastItem ? null : <DirectionHelper />}
       {_isCheckpoint ? (
         <CheckpointItem item={timeLineItem as TimeLineItem<Checkpoint>} />
       ) : (

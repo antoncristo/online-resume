@@ -16,7 +16,6 @@ export const TimeLineDot = (props: TimeLineDotProps) => {
           ].join(" ")}
         ></div>
       </div>
-      <div className={classes.pipe}></div>
       <div className={classes.leftHookRope}></div>
       <div className={classes.rightHookRope}></div>
     </div>

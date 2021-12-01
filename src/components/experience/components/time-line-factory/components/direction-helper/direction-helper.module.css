@@ -1,0 +1,45 @@
+.directionHelper {
+  position: absolute;
+  right: -25px;
+  top: 60px;
+  transform: rotate(90deg);
+}
+
+.directionHelper > div {
+  width: 4px;
+  aspect-ratio: 1/1;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.directionHelper > div:nth-child(1) {
+  animation: waves 2s ease-in 0s infinite;
+}
+.directionHelper > div:nth-child(2) {
+  animation: waves 2s ease-in 1s infinite;
+}
+.directionHelper > div:nth-child(3) {
+  animation: waves 2s ease-in 2s infinite;
+}
+
+@media screen and (max-width: 800px) {
+  .directionHelper {
+    position: absolute;
+    transform: rotate(0deg);
+    left: -20px;
+  }
+}
+
+@keyframes waves {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}

@@ -1,6 +1,6 @@
 .timeLineDot {
   position: relative;
-  height: 100px;
+  height: 60px;
   width: 50px;
 }
 .dot {
@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: center;
   left: 0;
-  top: calc(60% - 25px);
+  top: 0;
   width: 100%;
   aspect-ratio: 1/1;
   border-radius: 50%;
@@ -19,18 +19,12 @@
 .innerDot {
   width: 50%;
   aspect-ratio: 1/1;
-  background-color: var(--bg-4);
+  background-color: #dcdcdc;
   border-radius: 50%;
-}
-.pipe {
-  position: absolute;
-  left: calc(50% - 20px);
-  width: 40px;
-  height: 100px;
-  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 .checkpointColor {
-  background-color: var(--bg-3);
+  background-color: #fa8605;
 }
 .leftHookRope {
   position: absolute;
@@ -49,4 +43,12 @@
   width: 1px;
   height: 45px;
   background-color: #fff;
+}
+
+@media screen and (max-width: 800px) {
+  .dot,
+  .leftHookRope,
+  .rightHookRope {
+    display: none;
+  }
 }

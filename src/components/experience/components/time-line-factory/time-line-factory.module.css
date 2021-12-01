@@ -6,4 +6,11 @@
   justify-content: center;
   cursor: default;
   user-select: none;
+  margin: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .timeLineFactory {
+    margin: 0;
+  }
 }

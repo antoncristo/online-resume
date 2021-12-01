@@ -5,6 +5,13 @@
   padding: 25px;
   padding-top: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+@media screen and (max-width: 800px) {
+  .experienceContainer {
+    flex-direction: column;
+    align-items: center;
+  }
 }

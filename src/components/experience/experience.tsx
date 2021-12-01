@@ -22,6 +22,7 @@ const myExperienceTimeline: TimeLineItem<TimeLineItemType>[] = [
       roleDescription: `Developed responsive UI with a pixel-perfect approach.\nConverted design into functional client facing components.\nCollaborated with product team members to improve existing UX.\nGained experience working in an agile environment with weekly sprints.\nAssisted senior developers in implementation discussions and \ndebugging sessions.\nAssisted with the onboarding process of new front-end team members.`,
     },
   },
+
   {
     content: {
       checkpoint: "Today",
