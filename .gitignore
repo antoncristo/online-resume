@@ -7,6 +7,7 @@
 /.firebase
 /firebase.json
 /.firebaserc
+/firebase-debug.log
 
 # testing
 /coverage
