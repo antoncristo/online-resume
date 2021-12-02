@@ -1,0 +1,15 @@
+.resumeButton {
+  position: relative;
+  z-index: 200;
+  color: var(--name-color);
+  text-shadow: none;
+  font-family: "outfit-300";
+  font-size: 20px;
+  line-height: 20px;
+  width: fit-content;
+  height: 20px;
+}
+.resumeButton:hover {
+  cursor: pointer;
+  transform: scale(0.92, 0.92);
+}

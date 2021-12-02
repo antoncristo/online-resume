@@ -8,12 +8,17 @@ body {
   --bg-2: #679798;
   --bg-3: #02587d;
   --bg-4: #9a78ba;
+  --name-color: #fa8605;
 }
 
 ::-webkit-scrollbar {
   display: none;
 }
 
+@font-face {
+  font-family: "outfit-300";
+  src: url("./assets/fonts/outfit/Outfit-Light.ttf");
+}
 @font-face {
   font-family: "outfit-400";
   src: url("./assets/fonts/outfit/Outfit-Regular.ttf");
