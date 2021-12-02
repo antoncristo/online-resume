@@ -3,6 +3,9 @@ import ReactDOM from "react-dom";
 import reportWebVitals from "./reportWebVitals";
 import "./index.css";
 import { App } from "./app";
+import { awsS3controller } from "src/storage";
+
+awsS3controller.getResumePublicUrlFromS3();
 
 ReactDOM.render(
   <React.StrictMode>

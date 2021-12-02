@@ -2,6 +2,7 @@ import { MouseEvent } from "react";
 import { observer } from "mobx-react";
 import { textShadowStore } from "src/stores";
 import { textShadowActions } from "src/actions";
+import { ResumeButton } from "src/shared";
 
 import classes from "./introduction.module.css";
 
@@ -26,13 +27,23 @@ export const Introduction = observer(() => {
     <div
       onMouseMove={pauseEffect ? () => {} : onMouseMoveHandler}
       onClick={toggleTextShadowEffectOnMouseClick}
-      style={{
-        filter: `drop-shadow(${textShadowX}px ${textShadowY}px 4px #000)`,
-      }}
       className={classes.introduction}
     >
-      <div>Hello, I'm Anton</div>
-      <div>Front-End Developer</div>
+      <div
+        style={{
+          filter: `drop-shadow(${textShadowX}px ${textShadowY}px 4px #000)`,
+        }}
+      >
+        Hello, I'm <span className={classes.myName}>Anton</span>
+      </div>
+      <div
+        style={{
+          filter: `drop-shadow(${textShadowX}px ${textShadowY}px 4px #000)`,
+        }}
+      >
+        Front-End Developer
+      </div>
+      <ResumeButton absoluteStyle={{ right: "20px", top: "20px" }} />
     </div>
   );
 });
