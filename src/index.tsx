@@ -5,7 +5,7 @@ import "./index.css";
 import { App } from "./app";
 import { awsS3controller } from "src/storage";
 
-awsS3controller.getResumePublicUrlFromS3();
+awsS3controller.initS3Assets();
 
 ReactDOM.render(
   <React.StrictMode>

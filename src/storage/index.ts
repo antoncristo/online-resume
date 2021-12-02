@@ -18,7 +18,12 @@ class AwsS3Controller {
     return this._resumePublicUrl;
   }
 
-  public getResumePublicUrlFromS3 = () => {
+  public initS3Assets = () => {
+    this.getResumePublicUrlFromS3();
+    //TODO: add usage for fetching images of projects
+  };
+
+  private getResumePublicUrlFromS3 = () => {
     const request: AWS.Request<AWS.S3.ListObjectsV2Output, AWS.AWSError> =
       this._s3Instance.listObjectsV2(
         {
