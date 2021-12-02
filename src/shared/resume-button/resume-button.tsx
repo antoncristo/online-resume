@@ -17,6 +17,12 @@ export const ResumeButton = (props: ResumeButtonProps) => {
   const _isAbsolute = Object.keys(absoluteStyle).length;
 
   const onResumeClickHandler = () => {
+    if (!awsS3controller.resumePublicUrl) {
+      alert(
+        "Sorry, somthing is wrong with the button, try refreshing the resume :)"
+      );
+      return;
+    }
     window.open(awsS3controller.resumePublicUrl);
   };
 
