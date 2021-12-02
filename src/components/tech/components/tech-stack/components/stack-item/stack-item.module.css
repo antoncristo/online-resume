@@ -1,0 +1,11 @@
+.stackItem {
+  position: relative;
+  height: 100%;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.stackItem > img {
+  width: 60px;
+}

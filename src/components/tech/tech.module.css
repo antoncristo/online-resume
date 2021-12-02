@@ -1,0 +1,7 @@
+.projectsAndTech {
+  display: flex;
+  flex-direction: column;
+}
+.projAndTechItem {
+  width: 100%;
+}

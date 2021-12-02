@@ -3,6 +3,10 @@ body {
   padding: 0;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --bg-1: #80807f;
   --bg-2: #679798;
