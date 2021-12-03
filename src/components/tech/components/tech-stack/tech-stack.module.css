@@ -37,7 +37,8 @@
   justify-content: space-around;
   animation: slide 40s linear 20s infinite;
 }
-.pauseAnimation {
+.caruselContainer:hover .caruselBlock1,
+.caruselContainer:hover .caruselBlock2 {
   animation-play-state: paused;
 }
 
