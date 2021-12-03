@@ -13,6 +13,7 @@ body {
   --bg-3: #02587d;
   --bg-4: #9a78ba;
   --name-color: #fa8605;
+  --main-black: rgba(0, 0, 0, 0.6);
 }
 
 ::-webkit-scrollbar {

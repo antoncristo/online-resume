@@ -19,12 +19,12 @@
 .innerDot {
   width: 50%;
   aspect-ratio: 1/1;
-  background-color: #dcdcdc;
+  background-color: #fa8605;
   border-radius: 50%;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 .checkpointColor {
-  background-color: #fa8605;
+  background-color: #05e939;
 }
 .leftHookRope {
   position: absolute;

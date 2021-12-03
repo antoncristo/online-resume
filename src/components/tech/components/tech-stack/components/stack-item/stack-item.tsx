@@ -11,8 +11,8 @@ export const StackItem = (props: StackItemProps) => {
   const { stackItem, onMouseEnter, onMouseOut } = props;
   return (
     <div className={classes.stackItem}>
+      <div className={classes.stackItemTitle}>{stackItem.itemName}</div>
       <img
-        title={stackItem.itemName}
         onMouseEnter={onMouseEnter}
         onMouseOut={onMouseOut}
         src={stackItem.iconUrl}
