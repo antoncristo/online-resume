@@ -6,6 +6,20 @@
   align-items: center;
   justify-content: center;
 }
+.stackItemTitle {
+  display: none;
+  position: absolute;
+  top: -30px;
+  padding: 5px;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  color: #fff;
+  font-family: "outfit-500";
+  background-color: var(--main-black);
+}
+.stackItem:hover .stackItemTitle {
+  display: block;
+}
 .stackItem > img {
   width: 60px;
 }

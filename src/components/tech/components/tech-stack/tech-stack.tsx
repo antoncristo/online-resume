@@ -41,8 +41,6 @@ export const TechStack = (props: TechStackProps) => {
           ))}
         </div>
         <div
-          onMouseEnter={onMouseEnterHandler}
-          onMouseOut={onMouseOutHandler}
           className={[
             classes.caruselBlock2,
             isAnimationPaused && classes.pauseAnimation,
