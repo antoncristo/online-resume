@@ -9,6 +9,7 @@
   font-family: "outfit-600";
   font-size: 40px;
   background-color: rgba(0, 0, 0, 0.6);
+  cursor: default;
 }
 
 @media screen and (max-width: 1600px) {

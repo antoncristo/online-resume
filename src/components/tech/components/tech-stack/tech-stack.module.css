@@ -5,13 +5,17 @@
 .stackTitle {
   font-size: 24px;
   font-family: "outfit-700";
-  color: rgba(0, 0, 0, 0.6);
-  text-align: center;
+  color: var(--main-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 40px;
+  animation: pulse 4s linear infinite;
 }
 .stackTitle:hover {
   cursor: pointer;
-  transform: scale(0.92);
+  text-decoration: underline;
+  animation-play-state: paused;
 }
 .caruselContainer {
   height: 90px;
@@ -51,5 +55,17 @@
   }
   100% {
     left: 100%;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+  100% {
+    transform: scale(1, 1);
   }
 }

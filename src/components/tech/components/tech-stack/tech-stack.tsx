@@ -1,4 +1,5 @@
 import { StackItem as StackItemType } from "src/types/tech";
+
 import { StackItem } from "./components";
 
 import classes from "./tech-stack.module.css";
