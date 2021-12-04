@@ -1,9 +1,10 @@
 export type StackItem = {
   iconUrl: string;
   itemName: string;
+  skillGrade: number;
 };
 
 export type TechStackScheme = {
-  stackTitle: string;
+  stackTitle: "Toolbox" | "Other";
   stackItems: StackItem[];
 };

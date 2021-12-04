@@ -1,0 +1,43 @@
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: var(--main-black);
+  border-radius: 4px 4px 0 0;
+}
+.headerButton {
+  font-size: 18px;
+  font-family: "outfit-400";
+  color: var(--main-black);
+  height: var(--header-button-height);
+  min-width: 80px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  color: #dcdcdc;
+}
+.headerButton:hover {
+  font-family: "outfit-900";
+  cursor: pointer;
+}
+.activeButton {
+  font-family: "outfit-900";
+}
+.closeTechEvaluation {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 40px;
+  background-color: transparent;
+  border: none;
+  margin-left: auto;
+}
+.closeTechEvaluation > img {
+  width: 20px;
+}
+.closeTechEvaluation:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}

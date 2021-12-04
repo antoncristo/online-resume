@@ -1,7 +1,7 @@
 import { SectionHeader } from "src/shared";
 
 import { techStacks } from "./tech-stacks.config";
-import { TechStack } from "./components";
+import { TechStack, TechEvaluation } from "./components";
 
 import classes from "./tech.module.css";
 
@@ -20,6 +20,7 @@ export const Tech = () => {
           ))}
         </div>
       </div>
+      {false ? <TechEvaluation /> : null}
       {/* <div className={classes.projAndTechItem}>propjects</div> */}
     </div>
   );

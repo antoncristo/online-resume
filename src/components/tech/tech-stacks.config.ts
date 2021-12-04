@@ -17,32 +17,39 @@ export const techStacks: TechStackScheme[] = [
     stackTitle: "Toolbox",
     stackItems: [
       {
-        itemName: "Webpack",
-        iconUrl: webpackICon,
-      },
-      {
         itemName: "React",
         iconUrl: reactIcon,
+        skillGrade: 9,
       },
       {
         itemName: "Typescript",
         iconUrl: typescriptIcon,
+        skillGrade: 8,
       },
       {
         itemName: "MobX",
         iconUrl: mobxIcon,
+        skillGrade: 8.5,
       },
       {
         itemName: "Redux",
         iconUrl: reduxIcon,
+        skillGrade: 9,
       },
       {
         itemName: "CSS",
         iconUrl: cssIcon,
+        skillGrade: 9,
       },
       {
         itemName: "HTML",
         iconUrl: htmlIocn,
+        skillGrade: 8,
+      },
+      {
+        itemName: "Webpack",
+        iconUrl: webpackICon,
+        skillGrade: 5,
       },
     ],
   },
@@ -52,22 +59,27 @@ export const techStacks: TechStackScheme[] = [
       {
         itemName: "Github",
         iconUrl: gitHubIcon,
+        skillGrade: 7,
       },
       {
         itemName: "Git",
         iconUrl: gitIcon,
+        skillGrade: 6,
       },
       {
         itemName: "AWS",
         iconUrl: awsIcon,
+        skillGrade: 4,
       },
       {
         itemName: "Node.js",
         iconUrl: nodeIcon,
+        skillGrade: 5,
       },
       {
         itemName: "Firebase",
         iconUrl: firebaseIcon,
+        skillGrade: 8,
       },
     ],
   },

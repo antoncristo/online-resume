@@ -1,3 +1,7 @@
+.tech {
+  position: relative;
+  overflow-x: hidden;
+}
 .projectsAndTech {
   display: flex;
   flex-direction: column;
