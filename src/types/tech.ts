@@ -1,4 +1,4 @@
-export type StackTitle = "Toolbox" | "Other";
+export type StackTitle = "Front-End" | "Back-End" | "Other";
 
 export type StackItem = {
   iconUrl: string;

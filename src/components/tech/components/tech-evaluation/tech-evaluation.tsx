@@ -1,4 +1,4 @@
-import React, { RefObject, useEffect, KeyboardEvent } from "react";
+import React, { RefObject, useEffect, KeyboardEvent, MouseEvent } from "react";
 import { techPopupActions } from "src/actions";
 import { TechStackScheme } from "src/types";
 
@@ -20,6 +20,16 @@ export const TechEvaluation = (props: TechEvaluationProps) => {
     }
   };
 
+  const onOutsideClickHandler = () => {
+    techPopupActions.setTechPopupTitleState(null);
+  };
+
+  const preventParentOutsideClickHandler = (
+    event: MouseEvent<HTMLDivElement>
+  ) => {
+    event.stopPropagation();
+  };
+
   useEffect(() => {
     containerRef.current && containerRef.current.focus();
   }, [containerRef]);
@@ -27,11 +37,15 @@ export const TechEvaluation = (props: TechEvaluationProps) => {
   return (
     <div
       tabIndex={0}
+      onClick={onOutsideClickHandler}
       onKeyDown={onKeyDownHandler}
       ref={containerRef}
       className={classes.techEvaluationContainer}
     >
-      <div className={classes.techEvaluation}>
+      <div
+        onClick={preventParentOutsideClickHandler}
+        className={classes.techEvaluation}
+      >
         <Header />
         <div className={classes.stackItemsList}>
           {stack.stackItems.map((stackItem, index) => (

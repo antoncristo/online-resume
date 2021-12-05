@@ -41,7 +41,7 @@ export const Introduction = observer(() => {
           filter: `drop-shadow(${textShadowX}px ${textShadowY}px 4px #000)`,
         }}
       >
-        Front-End Developer
+        Software Developer
       </div>
       <ResumeButton absoluteStyle={{ right: "20px", top: "20px" }} />
     </div>

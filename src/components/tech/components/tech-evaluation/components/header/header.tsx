@@ -7,7 +7,7 @@ import { techPopupActions } from "src/actions";
 
 import classes from "./header.module.css";
 
-const stackTitles: StackTitle[] = ["Toolbox", "Other"];
+const stackTitles: StackTitle[] = ["Front-End", "Other"];
 
 export const Header = observer(() => {
   const { visibleStack } = techPopupStore;

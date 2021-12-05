@@ -1,11 +1,43 @@
 .tech {
   position: relative;
   overflow-x: hidden;
-}
-.projectsAndTech {
   display: flex;
   flex-direction: column;
 }
 .projAndTechItem {
   width: 100%;
+}
+.techSummary {
+  margin: 10px 0px;
+}
+.techSummary > div {
+  background-color: var(--main-black);
+  padding: 12px 6px;
+  text-align: center;
+  margin-bottom: 1px;
+  font-family: "outfit-600";
+  animation: rotateColor 30s linear infinite;
+}
+.techSummary > div:hover {
+  cursor: default;
+  background-color: transparent;
+  text-shadow: 0px 0px 2px #000;
+}
+
+@keyframes rotateColor {
+  0% {
+    color: var(--bg-1);
+  }
+  25% {
+    color: var(--bg-2);
+  }
+  50% {
+    color: var(--bg-3);
+  }
+  75% {
+    color: var(--bg-4);
+  }
+  100% {
+    color: var(--bg-1);
+  }
 }

@@ -9,12 +9,12 @@ import nodeIcon from "src/assets/svg/nodejs.svg";
 import gitHubIcon from "src/assets/svg/github.svg";
 import gitIcon from "src/assets/svg/git.svg";
 import webpackICon from "src/assets/svg/webpack.svg";
-import firebaseIcon from "src/assets/svg/firebase.svg";
+import scssIcon from "src/assets/svg/sass.svg";
 import { TechStackScheme } from "src/types/tech";
 
 export const techStacks: TechStackScheme[] = [
   {
-    stackTitle: "Toolbox",
+    stackTitle: "Front-End",
     stackItems: [
       {
         itemName: "React",
@@ -34,12 +34,17 @@ export const techStacks: TechStackScheme[] = [
       {
         itemName: "Redux",
         iconUrl: reduxIcon,
-        skillGrade: 9,
+        skillGrade: 8,
       },
       {
         itemName: "CSS",
         iconUrl: cssIcon,
-        skillGrade: 9,
+        skillGrade: 8.5,
+      },
+      {
+        itemName: "SCSS",
+        iconUrl: scssIcon,
+        skillGrade: 5,
       },
       {
         itemName: "HTML",
@@ -59,12 +64,12 @@ export const techStacks: TechStackScheme[] = [
       {
         itemName: "Github",
         iconUrl: gitHubIcon,
-        skillGrade: 7,
+        skillGrade: 8,
       },
       {
         itemName: "Git",
         iconUrl: gitIcon,
-        skillGrade: 6,
+        skillGrade: 5,
       },
       {
         itemName: "AWS",
@@ -74,12 +79,7 @@ export const techStacks: TechStackScheme[] = [
       {
         itemName: "Node.js",
         iconUrl: nodeIcon,
-        skillGrade: 5,
-      },
-      {
-        itemName: "Firebase",
-        iconUrl: firebaseIcon,
-        skillGrade: 8,
+        skillGrade: 6,
       },
     ],
   },
