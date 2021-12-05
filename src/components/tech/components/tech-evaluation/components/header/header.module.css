@@ -16,7 +16,7 @@
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  color: #dcdcdc;
+  color: var(--main-gray);
 }
 .headerButton:hover {
   font-family: "outfit-900";

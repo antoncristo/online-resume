@@ -14,6 +14,7 @@ body {
   --bg-4: #9a78ba;
   --name-color: #fa8605;
   --main-black: rgba(0, 0, 0, 0.6);
+  --main-gray: #dcdcdc;
 }
 
 ::-webkit-scrollbar {
