@@ -14,7 +14,7 @@
 }
 .stackTitle:hover {
   cursor: pointer;
-  color: #dcdcdc;
+  color: var(--main-gray);
   animation-play-state: paused;
 }
 .caruselContainer {
