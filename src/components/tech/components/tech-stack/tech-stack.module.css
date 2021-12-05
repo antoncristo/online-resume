@@ -15,7 +15,12 @@
 .stackTitle:hover {
   cursor: pointer;
   color: var(--main-gray);
+  text-shadow: 0px 0px 2px var(--main-black);
   animation-play-state: paused;
+}
+.stackTitle:hover .seeAsListSpan {
+  color: var(--main-black);
+  text-shadow: none;
 }
 .caruselContainer {
   width: 100%;
@@ -39,12 +44,12 @@
 
 @keyframes pulse {
   0% {
-    transform: scale(0.9, 0.9);
+    transform: scale(0.95, 0.95);
   }
   50% {
-    transform: scale(1.2, 1.2);
+    transform: scale(1.05, 1.05);
   }
   100% {
-    transform: scale(0.9, 0.9);
+    transform: scale(0.95, 0.95);
   }
 }

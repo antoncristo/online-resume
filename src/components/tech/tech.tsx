@@ -16,20 +16,31 @@ export const Tech = observer(() => {
 
   return (
     <div className={classes.tech}>
-      <SectionHeader sectionTitle="Projects & Tech" />
-      <div className={classes.projectsAndTech}>
-        <div className={classes.projAndTechItem}>
-          {techStacks.map((techStackItem, index) => (
-            <TechStack
-              key={JSON.stringify(techStackItem) + index}
-              stackItems={techStackItem.stackItems}
-              stackTitle={techStackItem.stackTitle}
-            />
-          ))}
+      <SectionHeader sectionTitle="Tech Skills" />
+      <div className={classes.techSummary}>
+        <div>I'm mainly focused on client-side tech</div>
+        <div>Proficient In creating and maintaining the UI</div>
+      </div>
+      <div className={classes.projAndTechItem}>
+        {techStacks.map((techStackItem, index) => (
+          <TechStack
+            key={JSON.stringify(techStackItem) + index}
+            stackItems={techStackItem.stackItems}
+            stackTitle={techStackItem.stackTitle}
+          />
+        ))}
+      </div>
+      <div className={classes.techSummary}>
+        <div>Also, I'm familiar with server side concepts</div>
+        <div>
+          Implemented RESTful API's with various requirements and 3rd party
+          API's
         </div>
+        <div>Worked with SQL/NoSQL Databases</div>
+        <div>Constantly working on improving my skills and knowledge</div>
+        <div>Then share and discuss it with my team</div>
       </div>
       {selectedTechStack ? <TechEvaluation stack={selectedTechStack} /> : null}
-      {/* <div className={classes.projAndTechItem}>propjects</div> */}
     </div>
   );
 });
