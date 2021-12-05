@@ -3,7 +3,8 @@
   z-index: 200;
   color: var(--name-color);
   text-shadow: none;
-  font-family: "outfit-400";
+  font-family: "outfit-900";
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
   font-size: 20px;
   line-height: 20px;
   width: fit-content;

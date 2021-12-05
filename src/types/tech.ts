@@ -1,3 +1,5 @@
+export type StackTitle = "Toolbox" | "Other";
+
 export type StackItem = {
   iconUrl: string;
   itemName: string;
@@ -5,6 +7,6 @@ export type StackItem = {
 };
 
 export type TechStackScheme = {
-  stackTitle: "Toolbox" | "Other";
+  stackTitle: StackTitle;
   stackItems: StackItem[];
 };

@@ -10,7 +10,7 @@
   font-family: "outfit-400";
   color: var(--main-black);
   height: var(--header-button-height);
-  min-width: 80px;
+  width: 90px;
   padding: 12px;
   display: flex;
   align-items: center;
