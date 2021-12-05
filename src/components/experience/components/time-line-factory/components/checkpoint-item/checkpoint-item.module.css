@@ -1,4 +1,6 @@
 .checkPointItem {
+  position: relative;
+  z-index: 2;
   background-color: rgba(0, 0, 0, 0.6);
   padding: 15px;
   border-radius: 4px;
@@ -7,6 +9,10 @@
   color: #fff;
   text-align: center;
   border: 1px solid #fff;
+}
+.checkPointItem:hover {
+  transform: scale(1.05, 1.05);
+  background-color: #000;
 }
 .date {
   font-family: "outfit-500";

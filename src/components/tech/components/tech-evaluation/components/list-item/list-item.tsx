@@ -18,9 +18,7 @@ export const ListItem = (props: ListItemProps) => {
         alt="item-icon"
       />
       <div className={classes.itemName}>{listItem.itemName}</div>
-      <div className={classes.spaceBreak}>
-        ........................................................................
-      </div>
+      <div className={classes.spaceBreak}></div>
       <div className={classes.skillRate}>
         <SkillGradeBar grade={listItem.skillGrade} />
       </div>

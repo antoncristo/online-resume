@@ -1,5 +1,5 @@
 .app {
-  animation: rotateBackgrounColor 30s linear infinite;
+  animation: rotateBackgrounColor 30s linear 0s infinite;
 }
 
 @keyframes rotateBackgrounColor {

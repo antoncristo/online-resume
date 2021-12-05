@@ -1,9 +1,15 @@
 .experienceItem {
-  background-color: rgba(0, 0, 0, 0.6);
+  position: relative;
+  z-index: 2;
+  background-color: var(--main-black);
   padding: 15px;
   border-radius: 4px;
   color: #fff;
   border: 1px solid #fff;
+}
+.experienceItem:hover {
+  transform: scale(1.05, 1.05);
+  background-color: #000;
 }
 .durationAtCompany {
   font-family: "outfit-500";
@@ -20,5 +26,9 @@
 @media screen and (max-width: 800px) {
   .experienceContent {
     flex-direction: column;
+  }
+  .experienceItem:hover {
+    transform: scale(1.05, 1.05);
+    background-color: #000;
   }
 }

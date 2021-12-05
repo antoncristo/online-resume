@@ -26,5 +26,5 @@
 .gradeTrack {
   height: 20px;
   border-radius: 6px;
-  background-color: var(--bg-3);
+  background-color: var(--name-color);
 }

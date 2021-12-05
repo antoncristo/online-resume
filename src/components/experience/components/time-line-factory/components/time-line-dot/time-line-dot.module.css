@@ -28,6 +28,7 @@
 }
 .leftHookRope {
   position: absolute;
+  z-index: 0;
   bottom: -4px;
   left: 3px;
   transform: rotate(32deg);
@@ -37,6 +38,7 @@
 }
 .rightHookRope {
   position: absolute;
+  z-index: 0;
   bottom: -4px;
   right: 3px;
   transform: rotate(-32deg);
