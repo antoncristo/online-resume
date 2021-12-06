@@ -26,7 +26,7 @@ const myExperienceTimeline: TimeLineItem<TimeLineItemType>[] = [
   {
     content: {
       checkpoint: "Today",
-      date: dayjs().format("MMMM YYYY"),
+      date: dayjs().format("MMM YYYY"),
     },
   },
 ];
