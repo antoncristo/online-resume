@@ -1,0 +1,13 @@
+.projectContainer {
+  border: 1px solid red;
+  padding: 20px;
+  margin-top: 40px;
+  display: flex;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .projectContainer {
+    flex-direction: column;
+  }
+}

@@ -3,6 +3,7 @@
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 .projAndTechItem {
   width: 100%;
@@ -16,28 +17,10 @@
   text-align: center;
   margin-bottom: 1px;
   font-family: "outfit-600";
-  animation: rotateColor 30s linear infinite;
+  color: #fff;
 }
 .techSummary > div:hover {
   cursor: default;
   background-color: transparent;
   text-shadow: 0px 0px 2px #000;
-}
-
-@keyframes rotateColor {
-  0% {
-    color: var(--bg-1);
-  }
-  25% {
-    color: var(--bg-2);
-  }
-  50% {
-    color: var(--bg-3);
-  }
-  75% {
-    color: var(--bg-4);
-  }
-  100% {
-    color: var(--bg-1);
-  }
 }

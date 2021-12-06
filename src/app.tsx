@@ -1,4 +1,4 @@
-import { Experience, Introduction, Tech } from "./components";
+import { Experience, Introduction, Tech, Projects } from "./components";
 
 import classes from "./app.module.css";
 
@@ -8,6 +8,7 @@ export const App = () => {
       <Introduction />
       <Experience />
       <Tech />
+      {/* <Projects /> */}
     </div>
   );
 };
