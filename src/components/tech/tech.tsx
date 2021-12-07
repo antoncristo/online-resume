@@ -53,16 +53,6 @@ export const Tech = observer(() => {
           />
         ))}
       </div>
-      {/* <div className={classes.techSummary}>
-        <div>Also, I'm familiar with server side concepts</div>
-        <div>
-          Implemented RESTful API's with various requirements and 3rd party
-          API's
-        </div>
-        <div>Worked with SQL/NoSQL Databases</div>
-        <div>Constantly working on improving my skills and knowledge</div>
-        <div>Then share and discuss it with my team</div>
-      </div> */}
       {selectedTechStack ? <TechEvaluation stack={selectedTechStack} /> : null}
     </div>
   );
