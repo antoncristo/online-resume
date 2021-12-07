@@ -33,7 +33,7 @@ export const SlideShow = (props: SlideShowProps) => {
     setPlaySlideshow(!playSlideShow);
   };
 
-  useInterval(next, 6000, playSlideShow);
+  useInterval(next, 9000, playSlideShow);
 
   return (
     <div className={classes.slideshow}>
