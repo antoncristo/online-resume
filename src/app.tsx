@@ -8,7 +8,7 @@ export const App = () => {
       <Introduction />
       <Experience />
       <Tech />
-      {/* <Projects /> */}
+      <Projects />
     </div>
   );
 };
