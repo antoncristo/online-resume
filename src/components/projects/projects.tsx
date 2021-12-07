@@ -9,12 +9,15 @@ export const Projects = () => {
   return (
     <div className={classes.projects}>
       <SectionHeader sectionTitle="PROJECTS" />
-      {myProjects.map((project, index) => (
-        <ProjectContainer
-          project={project}
-          key={JSON.stringify(project) + index}
-        />
-      ))}
+      <div className={classes.projectsWrapper}>
+        {myProjects.map((project, index) => (
+          <ProjectContainer
+            index={index}
+            project={project}
+            key={JSON.stringify(project) + index}
+          />
+        ))}
+      </div>
     </div>
   );
 };

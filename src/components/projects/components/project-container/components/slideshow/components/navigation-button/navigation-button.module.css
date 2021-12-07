@@ -1,0 +1,23 @@
+.navigationButton {
+  width: 50px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navigationButton:hover {
+  cursor: pointer;
+  box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+}
+
+@media screen and (max-width: 800px) {
+  .navigationButton {
+    width: 30px;
+  }
+  .navigationButton > img {
+    width: 20px;
+  }
+}
