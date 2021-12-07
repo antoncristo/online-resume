@@ -9,7 +9,8 @@
   width: 100%;
 }
 .techSummary {
-  margin: 10px 0px;
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 .techSummary > div {
   background-color: var(--main-black);

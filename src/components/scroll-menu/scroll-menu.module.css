@@ -1,0 +1,34 @@
+.scrollMenu {
+  position: fixed;
+  right: 20px;
+  top: calc(50% - 90px);
+  width: 50px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.scrollButton {
+  border: 2px solid var(--main-gray);
+  background-color: var(--main-black);
+  color: var(--main-gray);
+  width: 30px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-family: "outfit-600";
+}
+.activeButton {
+  border-color: var(--name-color);
+  color: var(--name-color);
+}
+
+@media screen and (max-width: 800px) {
+  .scrollMenu {
+    display: none;
+  }
+}
