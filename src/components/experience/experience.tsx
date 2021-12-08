@@ -9,7 +9,7 @@ import { TimeLineFactory } from "./components";
 
 import classes from "./experience.module.css";
 
-const SECTION_SCROLL_KEY: ScrollMenuMapName = "TIMELINE";
+const SECTION_SCROLL_KEY: keyof ScrollMenuMapName = "TIMELINE";
 
 const myExperienceTimeline: TimeLineItem<TimeLineItemType>[] = [
   {

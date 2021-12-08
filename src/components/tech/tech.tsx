@@ -9,7 +9,7 @@ import { TechStack, TechEvaluation } from "./components";
 
 import classes from "./tech.module.css";
 
-const SECTION_SCROLL_KEY: ScrollMenuMapName = "TECH";
+const SECTION_SCROLL_KEY: keyof ScrollMenuMapName = "TECH";
 
 export const Tech = observer(() => {
   const { visibleStack } = techPopupStore;

@@ -8,7 +8,7 @@ import { ProjectContainer } from "./components";
 
 import classes from "./projects.module.css";
 
-const SECTION_SCROLL_KEY: ScrollMenuMapName = "PROJECTS";
+const SECTION_SCROLL_KEY: keyof ScrollMenuMapName = "PROJECTS";
 
 export const Projects = () => {
   const projectsRef: RefObject<HTMLDivElement> = useRef(null);
