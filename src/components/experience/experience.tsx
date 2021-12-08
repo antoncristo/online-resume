@@ -1,16 +1,15 @@
 import dayjs from "dayjs";
 import { RefObject, useRef } from "react";
-import { scrollMenuActions } from "src/actions";
-import { useScrollMenu } from "src/hooks";
+import { useInitScrollMapRef } from "src/hooks";
 import { SectionHeader } from "src/shared";
-import { ScrollMenuMapKey, scrollMenuStore } from "src/stores";
+import { ScrollMenuMapName } from "src/stores";
 import { TimeLineItem, TimeLineItemType } from "src/types";
 
 import { TimeLineFactory } from "./components";
 
 import classes from "./experience.module.css";
 
-const SECTION_SCROLL_KEY: ScrollMenuMapKey = ScrollMenuMapKey.TIMELINE;
+const SECTION_SCROLL_KEY: ScrollMenuMapName = "TIMELINE";
 
 const myExperienceTimeline: TimeLineItem<TimeLineItemType>[] = [
   {
@@ -38,19 +37,9 @@ const myExperienceTimeline: TimeLineItem<TimeLineItemType>[] = [
 ];
 
 export const Experience = () => {
-  const { scrollMenuMap } = scrollMenuStore;
   const experienceRef: RefObject<HTMLDivElement> = useRef(null);
 
-  const addSectionRefToMap = () => {
-    return !scrollMenuMap[SECTION_SCROLL_KEY]
-      ? scrollMenuActions.addScrollSectionToMap(
-          SECTION_SCROLL_KEY,
-          experienceRef
-        )
-      : () => {};
-  };
-
-  useScrollMenu(experienceRef, addSectionRefToMap);
+  useInitScrollMapRef(SECTION_SCROLL_KEY, experienceRef);
 
   return (
     <div ref={experienceRef} className={classes.experience}>

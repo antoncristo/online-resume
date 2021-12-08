@@ -1,6 +1,8 @@
 import { useEffect, RefObject } from "react";
+import { scrollMenuActions } from "src/actions";
+import { ScrollMenuMapName, scrollMenuStore } from "src/stores";
 
-export const useScrollMenu = (
+const useScrollMenu = (
   sectionRef: RefObject<HTMLDivElement>,
   callback: () => void
 ) => {
@@ -8,4 +10,23 @@ export const useScrollMenu = (
     sectionRef.current && callback();
     //eslint-disable-next-line
   }, [sectionRef]);
+};
+
+export const useInitScrollMapRef = (
+  sectionRefName: ScrollMenuMapName,
+  sectionRef: RefObject<HTMLDivElement>
+) => {
+  const addSectionRefToMap = () => {
+    const sectionObjectFromStore = scrollMenuStore.scrollMenuMap.find(
+      (item) => item.name === sectionRefName
+    );
+
+    if (!sectionObjectFromStore) {
+      throw Error("[addSectionRefToMap]:: somthing went wrong");
+    }
+
+    scrollMenuActions.addScrollSectionToMap(sectionRefName, sectionRef);
+  };
+
+  useScrollMenu(sectionRef, addSectionRefToMap);
 };

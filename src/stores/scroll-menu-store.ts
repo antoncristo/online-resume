@@ -1,36 +1,53 @@
 import { makeAutoObservable } from "mobx";
 import { RefObject } from "react";
 
-export type ScrollMenuMap = {
-  [x: string]: RefObject<HTMLDivElement>;
-};
+export type ScrollMenuMapName =
+  | "INTRODUCTION"
+  | "TIMELINE"
+  | "TECH"
+  | "PROJECTS";
 
-export enum ScrollMenuMapKey {
-  INTRODUCTION = 0,
-  TIMELINE = 1,
-  TECH = 2,
-  PROJECTS = 3,
-}
+export type ScrollMenuMap = {
+  name: ScrollMenuMapName;
+  ref: RefObject<HTMLDivElement> | null;
+};
 
 class ScrollMenuStore {
   constructor() {
     makeAutoObservable(this);
   }
 
-  private _scrollMenuMap: ScrollMenuMap = {};
+  private _scrollMenuMap: ScrollMenuMap[] = [
+    {
+      name: "INTRODUCTION",
+      ref: null,
+    },
+    {
+      name: "TIMELINE",
+      ref: null,
+    },
+    {
+      name: "TECH",
+      ref: null,
+    },
+    {
+      name: "PROJECTS",
+      ref: null,
+    },
+  ];
   get scrollMenuMap() {
     return this._scrollMenuMap;
   }
-  set scrollMenuMap(mapUpdate: ScrollMenuMap) {
+  set scrollMenuMap(mapUpdate: ScrollMenuMap[]) {
     this._scrollMenuMap = mapUpdate;
   }
 
-  private _activeSectionIndex: number = ScrollMenuMapKey.INTRODUCTION;
+  private _activeSectionIndex: number = 0;
   get activeSectionIndex() {
     return this._activeSectionIndex;
   }
-  set activeSectionIndex(newIndex: number) {
-    this._activeSectionIndex = newIndex;
+  set activeSectionIndex(index: number) {
+    this._activeSectionIndex = index;
   }
 
   private _blockScrollUpdate: boolean = false;

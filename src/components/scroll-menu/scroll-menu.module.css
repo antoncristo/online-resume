@@ -10,7 +10,7 @@
   justify-content: space-between;
 }
 .scrollButton {
-  border: 2px solid var(--main-gray);
+  border: 2px solid transparent;
   background-color: var(--main-black);
   color: var(--main-gray);
   width: 30px;
@@ -21,10 +21,15 @@
   justify-content: center;
   cursor: pointer;
   font-family: "outfit-600";
+  opacity: 0.6;
+}
+.scrollButton:hover {
+  opacity: 1;
 }
 .activeButton {
-  border-color: var(--name-color);
-  color: var(--name-color);
+  opacity: 1;
+  border: 2px solid var(--main-gray);
+  background-color: var(--main-black);
 }
 
 @media screen and (max-width: 800px) {

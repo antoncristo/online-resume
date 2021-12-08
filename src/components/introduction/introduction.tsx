@@ -1,17 +1,16 @@
 import { MouseEvent, RefObject, useRef } from "react";
-import { ScrollMenuMapKey, scrollMenuStore, textShadowStore } from "src/stores";
-import { scrollMenuActions, textShadowActions } from "src/actions";
+import { ScrollMenuMapName, textShadowStore } from "src/stores";
+import { textShadowActions } from "src/actions";
 import { ResumeButton } from "src/shared";
 
 import classes from "./introduction.module.css";
-import { useScrollMenu } from "src/hooks";
+import { useInitScrollMapRef } from "src/hooks";
 import { observer } from "mobx-react";
 
-const SECTION_SCROLL_KEY: ScrollMenuMapKey = ScrollMenuMapKey.INTRODUCTION;
+const SECTION_SCROLL_KEY: ScrollMenuMapName = "INTRODUCTION";
 
 export const Introduction = observer(() => {
   const { textShadowX, textShadowY, pauseEffect } = textShadowStore;
-  const { scrollMenuMap } = scrollMenuStore;
   const introductionRef: RefObject<HTMLDivElement> = useRef(null);
 
   const onMouseMoveHandler = (event: MouseEvent<HTMLDivElement>) => {
@@ -28,16 +27,7 @@ export const Introduction = observer(() => {
     textShadowActions.shouldPauseTextShadowEffect(!pauseEffect);
   };
 
-  const addSectionRefToMap = () => {
-    return !scrollMenuMap[SECTION_SCROLL_KEY]
-      ? scrollMenuActions.addScrollSectionToMap(
-          SECTION_SCROLL_KEY,
-          introductionRef
-        )
-      : () => {};
-  };
-
-  useScrollMenu(introductionRef, addSectionRefToMap);
+  useInitScrollMapRef(SECTION_SCROLL_KEY, introductionRef);
 
   return (
     <div

@@ -1,22 +1,27 @@
 import { MouseEvent } from "react";
 import { observer } from "mobx-react";
-import { ScrollMenuMapKey, scrollMenuStore } from "src/stores";
+import { scrollMenuStore } from "src/stores";
 import { scrollMenuActions } from "src/actions";
 
 import classes from "./scroll-menu.module.css";
 
 export const ScrollMenu = observer(() => {
-  const { activeSectionIndex } = scrollMenuStore;
+  const { activeSectionIndex, scrollMenuMap } = scrollMenuStore;
 
   const scrollSectionIntoView = (event: MouseEvent<HTMLDivElement>) => {
     const clickedSection = event.currentTarget.getAttribute("data-section-key");
 
     if (!clickedSection) {
-      alert("somthing is wrong with the menu!");
-      return;
+      throw Error("[scrollSectionIntoView]:: somthing is wrong with the menu!");
     }
 
-    scrollMenuActions.setActiveSectionIndex(parseInt(clickedSection));
+    const indexOfClickedSection = scrollMenuMap.findIndex(
+      (scrollSection) => scrollSection.name === clickedSection
+    );
+
+    scrollMenuActions.setActiveSectionIndex(
+      indexOfClickedSection > -1 ? indexOfClickedSection : 0
+    );
 
     scrollMenuActions.blockScrollUpdateSetter(true);
     setTimeout(() => {
@@ -26,25 +31,24 @@ export const ScrollMenu = observer(() => {
 
   return (
     <div className={classes.scrollMenu}>
-      {Object.keys(ScrollMenuMapKey)
-        .filter((key) => !isNaN(parseInt(key)))
-        .map((menuMapKey, index) => {
-          const _isActive = activeSectionIndex === index;
+      {scrollMenuMap.map((menuMapItem, index) => {
+        const _isActive = activeSectionIndex === index;
 
-          return (
-            <div
-              key={menuMapKey + index}
-              onClick={scrollSectionIntoView}
-              data-section-key={menuMapKey}
-              className={[
-                classes.scrollButton,
-                _isActive && classes.activeButton,
-              ].join(" ")}
-            >
-              {index + 1}
-            </div>
-          );
-        })}
+        return (
+          <div
+            title={menuMapItem.name.toLowerCase()}
+            key={menuMapItem.name + index}
+            onClick={scrollSectionIntoView}
+            data-section-key={menuMapItem.name}
+            className={[
+              classes.scrollButton,
+              _isActive && classes.activeButton,
+            ].join(" ")}
+          >
+            {index + 1}
+          </div>
+        );
+      })}
     </div>
   );
 });
