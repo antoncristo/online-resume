@@ -6,10 +6,11 @@ import { scrollMenuActions } from "src/actions";
 import classes from "./scroll-menu.module.css";
 
 const SystemToDisplaySectionName: ScrollMenuMapName = {
-  INTRODUCTION: "Main",
+  INTRODUCTION: "Hello",
   TIMELINE: "Experience",
   PROJECTS: "Projects",
   TECH: "Tech",
+  CONTACT: "Contact ",
 };
 
 export const ScrollMenu = observer(() => {

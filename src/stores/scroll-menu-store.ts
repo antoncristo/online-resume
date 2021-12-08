@@ -6,6 +6,7 @@ export type ScrollMenuMapName = {
   TIMELINE: string;
   TECH: string;
   PROJECTS: string;
+  CONTACT: string;
 };
 
 export type ScrollMenuMap = {
@@ -33,6 +34,10 @@ class ScrollMenuStore {
     },
     {
       name: "PROJECTS",
+      ref: null,
+    },
+    {
+      name: "CONTACT",
       ref: null,
     },
   ];
