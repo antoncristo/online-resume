@@ -1,33 +1,25 @@
 import { RefObject, useRef } from "react";
 import { SectionHeader } from "src/shared";
 import { observer } from "mobx-react";
-import { ScrollMenuMapKey, scrollMenuStore, techPopupStore } from "src/stores";
-import { useScrollMenu } from "src/hooks";
-import { scrollMenuActions } from "src/actions";
+import { ScrollMenuMapName, techPopupStore } from "src/stores";
+import { useInitScrollMapRef } from "src/hooks";
 
 import { techStacks } from "./tech-stacks.config";
 import { TechStack, TechEvaluation } from "./components";
 
 import classes from "./tech.module.css";
 
-const SECTION_SCROLL_KEY: ScrollMenuMapKey = ScrollMenuMapKey.TECH;
+const SECTION_SCROLL_KEY: ScrollMenuMapName = "TECH";
 
 export const Tech = observer(() => {
   const { visibleStack } = techPopupStore;
-  const { scrollMenuMap } = scrollMenuStore;
   const techRef: RefObject<HTMLDivElement> = useRef(null);
 
   const selectedTechStack = techStacks.find(
     (stack) => stack.stackTitle === visibleStack
   );
 
-  const addSectionRefToMap = () => {
-    return !scrollMenuMap[SECTION_SCROLL_KEY]
-      ? scrollMenuActions.addScrollSectionToMap(SECTION_SCROLL_KEY, techRef)
-      : () => {};
-  };
-
-  useScrollMenu(techRef, addSectionRefToMap);
+  useInitScrollMapRef(SECTION_SCROLL_KEY, techRef);
 
   return (
     <div ref={techRef} className={classes.tech}>

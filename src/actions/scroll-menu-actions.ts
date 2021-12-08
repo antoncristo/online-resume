@@ -1,22 +1,26 @@
 import { action } from "mobx";
 import { RefObject, MouseEvent } from "react";
-import { ScrollMenuMapKey, scrollMenuStore, ScrollMenuMap } from "src/stores";
+import { ScrollMenuMapName, scrollMenuStore, ScrollMenuMap } from "src/stores";
 
 export const addScrollSectionToMap = action(
-  (key: ScrollMenuMapKey, value: RefObject<HTMLDivElement>) => {
-    const copyOfScrollMap: ScrollMenuMap = Object.assign(
-      {},
-      scrollMenuStore.scrollMenuMap
+  (key: ScrollMenuMapName, value: RefObject<HTMLDivElement>) => {
+    const copyOfScrollMap: ScrollMenuMap[] = scrollMenuStore.scrollMenuMap.map(
+      (mapItem) => Object.assign({}, mapItem)
     );
 
-    copyOfScrollMap[key] = value;
+    const scrollItemByKey = copyOfScrollMap.find((item) => item.name === key);
+    if (!scrollItemByKey) {
+      throw Error("[addScrollSectionToMap]:: somthing went wrong");
+    }
+
+    scrollItemByKey.ref = value;
 
     scrollMenuStore.scrollMenuMap = copyOfScrollMap;
   }
 );
 
-export const setActiveSectionIndex = action((newIndex: ScrollMenuMapKey) => {
-  scrollMenuStore.scrollMenuMap[newIndex]?.current?.scrollIntoView({
+export const setActiveSectionIndex = action((newIndex: number) => {
+  scrollMenuStore.scrollMenuMap[newIndex]?.ref?.current?.scrollIntoView({
     behavior: "smooth",
   });
 
@@ -25,10 +29,8 @@ export const setActiveSectionIndex = action((newIndex: ScrollMenuMapKey) => {
 
 export const autoSetActiveSectionOnScroll = action(
   (event: MouseEvent<HTMLDivElement>) => {
-    const sectionsScrollOffsetY = Object.keys(
-      scrollMenuStore.scrollMenuMap
-    ).map((key) => {
-      return scrollMenuStore.scrollMenuMap[key].current?.offsetTop || 0;
+    const sectionsScrollOffsetY = scrollMenuStore.scrollMenuMap.map((item) => {
+      return item.ref?.current?.offsetTop || 0;
     });
 
     let _activeIndex = 0;
