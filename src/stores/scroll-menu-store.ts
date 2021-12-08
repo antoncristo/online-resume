@@ -1,14 +1,15 @@
 import { makeAutoObservable } from "mobx";
 import { RefObject } from "react";
 
-export type ScrollMenuMapName =
-  | "INTRODUCTION"
-  | "TIMELINE"
-  | "TECH"
-  | "PROJECTS";
+export type ScrollMenuMapName = {
+  INTRODUCTION: string;
+  TIMELINE: string;
+  TECH: string;
+  PROJECTS: string;
+};
 
 export type ScrollMenuMap = {
-  name: ScrollMenuMapName;
+  name: keyof ScrollMenuMapName;
   ref: RefObject<HTMLDivElement> | null;
 };
 

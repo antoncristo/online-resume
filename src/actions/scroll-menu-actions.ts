@@ -3,7 +3,7 @@ import { RefObject, MouseEvent } from "react";
 import { ScrollMenuMapName, scrollMenuStore, ScrollMenuMap } from "src/stores";
 
 export const addScrollSectionToMap = action(
-  (key: ScrollMenuMapName, value: RefObject<HTMLDivElement>) => {
+  (key: keyof ScrollMenuMapName, value: RefObject<HTMLDivElement>) => {
     const copyOfScrollMap: ScrollMenuMap[] = scrollMenuStore.scrollMenuMap.map(
       (mapItem) => Object.assign({}, mapItem)
     );

@@ -13,7 +13,7 @@ const useScrollMenu = (
 };
 
 export const useInitScrollMapRef = (
-  sectionRefName: ScrollMenuMapName,
+  sectionRefName: keyof ScrollMenuMapName,
   sectionRef: RefObject<HTMLDivElement>
 ) => {
   const addSectionRefToMap = () => {

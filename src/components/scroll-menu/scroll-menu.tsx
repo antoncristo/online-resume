@@ -1,9 +1,16 @@
 import { MouseEvent } from "react";
 import { observer } from "mobx-react";
-import { scrollMenuStore } from "src/stores";
+import { ScrollMenuMapName, scrollMenuStore } from "src/stores";
 import { scrollMenuActions } from "src/actions";
 
 import classes from "./scroll-menu.module.css";
+
+const SystemToDisplaySectionName: ScrollMenuMapName = {
+  INTRODUCTION: "Main",
+  TIMELINE: "Experience",
+  PROJECTS: "Projects",
+  TECH: "Tech",
+};
 
 export const ScrollMenu = observer(() => {
   const { activeSectionIndex, scrollMenuMap } = scrollMenuStore;
@@ -36,7 +43,6 @@ export const ScrollMenu = observer(() => {
 
         return (
           <div
-            title={menuMapItem.name.toLowerCase()}
             key={menuMapItem.name + index}
             onClick={scrollSectionIntoView}
             data-section-key={menuMapItem.name}
@@ -46,6 +52,9 @@ export const ScrollMenu = observer(() => {
             ].join(" ")}
           >
             {index + 1}
+            <div className={classes.onHoverText}>
+              {SystemToDisplaySectionName[menuMapItem.name]}
+            </div>
           </div>
         );
       })}

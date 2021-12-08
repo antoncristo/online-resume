@@ -7,7 +7,7 @@ import classes from "./introduction.module.css";
 import { useInitScrollMapRef } from "src/hooks";
 import { observer } from "mobx-react";
 
-const SECTION_SCROLL_KEY: ScrollMenuMapName = "INTRODUCTION";
+const SECTION_SCROLL_KEY: keyof ScrollMenuMapName = "INTRODUCTION";
 
 export const Introduction = observer(() => {
   const { textShadowX, textShadowY, pauseEffect } = textShadowStore;
