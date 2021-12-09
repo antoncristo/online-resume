@@ -26,8 +26,8 @@ export const Tech = observer(() => {
       <SectionHeader sectionTitle="Tech Skills" />
       <div className={classes.techSummary}>
         <div>I'm mainly focused on client-side tech</div>
+        <div>Passionate about translating design to great UI/UX</div>
         <div>Proficient In creating and maintaining the UI</div>
-        <div>Also, I'm familiar with server side concepts</div>
         <div>
           Implemented RESTful API's with various requirements and 3rd party
           API's

@@ -12,6 +12,10 @@
   width: 24px;
   margin-right: 10px;
 }
+.contactItem:hover {
+  cursor: pointer;
+  transform: scale(0.92, 0.92);
+}
 
 @media screen and (max-width: 800px) {
   .contactItem {
