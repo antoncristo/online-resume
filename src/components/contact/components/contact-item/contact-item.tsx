@@ -16,11 +16,11 @@ export const ContactItem = (props: ContactItemProps) => {
   };
 
   const onContactItemClickHandler = (event: MouseEvent<HTMLDivElement>) => {
-    event.stopPropagation();
-
     contactItem.variant === "LINK"
       ? window.open(contactItem.contactInfo)
       : writeToClipboard();
+
+    event.stopPropagation();
   };
 
   return (

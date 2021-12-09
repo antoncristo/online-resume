@@ -3,17 +3,20 @@ import { textShadowStore } from "src/stores";
 
 export const textShadowCoordRelativeToMouse = action(
   (mouseX: number, mouseY: number) => {
+    const isMobilwWidth = window.innerWidth < 800;
+
     const clientXCenter = window.innerWidth / 2;
     const clientYCenter = window.innerHeight / 2;
 
     const xAxisDelta = mouseX - clientXCenter;
     const yAxisDelta = mouseY - clientYCenter;
 
-    textShadowStore.textShadowX = -xAxisDelta;
-    textShadowStore.textShadowY = yAxisDelta;
+    textShadowStore.textShadowX = isMobilwWidth ? 0 : -xAxisDelta;
+    textShadowStore.textShadowY = isMobilwWidth ? 0 : yAxisDelta;
   }
 );
 
 export const shouldPauseTextShadowEffect = action((isPaused: boolean) => {
-  textShadowStore.pauseEffect = isPaused;
+  const isMobilwWidth = window.innerWidth < 800;
+  textShadowStore.pauseEffect = isMobilwWidth ? false : isPaused;
 });
