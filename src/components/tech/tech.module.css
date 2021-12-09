@@ -13,15 +13,14 @@
   margin-bottom: 50px;
 }
 .techSummary > div {
-  background-color: var(--main-black);
+  color: var(--main-black);
   padding: 12px 6px;
   text-align: center;
   margin-bottom: 1px;
   font-family: "outfit-600";
-  color: #fff;
 }
 .techSummary > div:hover {
   cursor: default;
+  color: #fff;
   background-color: transparent;
-  text-shadow: 0px 0px 2px #000;
 }
