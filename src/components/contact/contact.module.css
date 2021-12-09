@@ -15,18 +15,9 @@
   font-family: "outfit-900";
   margin-top: auto;
 }
-.contactItem {
-  width: fit-content;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+.resumeButtonWrapper {
+  border-bottom: 1px solid #fff;
   margin: 12px 0;
-  font-size: 16px;
-  font-family: "outfit-400";
-}
-.contactItem > img {
-  width: 24px;
-  margin-right: 10px;
 }
 
 @media screen and (max-width: 1600px) {
@@ -39,8 +30,5 @@
   .contactFooter {
     font-size: 24px;
     text-align: center;
-  }
-  .contactItem {
-    font-size: 14px;
   }
 }

@@ -12,3 +12,12 @@
   width: 24px;
   margin-right: 10px;
 }
+
+@media screen and (max-width: 800px) {
+  .contactItem {
+    font-size: 14px;
+  }
+  .contactItem > img {
+    width: 20px;
+  }
+}

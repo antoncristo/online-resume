@@ -71,7 +71,7 @@ export const Contact = observer(() => {
         {contactItems.map((cItem, index) => (
           <ContactItem key={JSON.stringify(cItem)} contactItem={cItem} />
         ))}
-        <div className={classes.contactItem}>
+        <div className={classes.resumeButtonWrapper}>
           <ResumeButton />
         </div>
         <div
