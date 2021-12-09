@@ -12,14 +12,7 @@ export const ContactItem = (props: ContactItemProps) => {
 
   const writeToClipboard = () => {
     navigator.clipboard.writeText(contactItem.contactInfo);
-    navigator.clipboard
-      .readText()
-      .then((clipValue) => {
-        alert("copied: " + clipValue);
-      })
-      .catch((err) => {
-        alert("Could not save to clip board. Please try again!");
-      });
+    alert("copied: " + contactItem.contactInfo);
   };
 
   const onContactItemClickHandler = (event: MouseEvent<HTMLDivElement>) => {
