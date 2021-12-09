@@ -1,5 +1,10 @@
+:root {
+  --section-header-height: 80px;
+  --section-header-smaller-height: 60px;
+}
+
 .sectionHeader {
-  height: 80px;
+  height: var(--section-header-height);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,7 +19,7 @@
 
 @media screen and (max-width: 1600px) {
   .sectionHeader {
-    height: 60px;
+    height: var(--section-header-smaller-height);
     font-size: 24px;
   }
 }

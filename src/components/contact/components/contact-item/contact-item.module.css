@@ -1,0 +1,23 @@
+.contactItem {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 12px 0;
+  border-bottom: 1px solid #fff;
+  font-size: 16px;
+  font-family: "outfit-400";
+}
+.contactItem > img {
+  width: 24px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .contactItem {
+    font-size: 14px;
+  }
+  .contactItem > img {
+    width: 20px;
+  }
+}
