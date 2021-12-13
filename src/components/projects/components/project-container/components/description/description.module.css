@@ -10,6 +10,9 @@
 .projectDescription:hover {
   cursor: pointer;
 }
+.projectDescription:hover .title {
+  text-decoration: underline;
+}
 .title {
   font-family: "outfit-900";
   font-size: 32px;

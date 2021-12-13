@@ -3,10 +3,10 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 12px 0;
+  padding: 15px 0;
   border-bottom: 1px solid #fff;
-  font-size: 16px;
-  font-family: "outfit-400";
+  font-size: 20px;
+  font-family: "outfit-600";
 }
 .contactItem > img {
   width: 24px;
@@ -15,6 +15,15 @@
 .contactItem:hover {
   cursor: pointer;
   transform: scale(0.92, 0.92);
+}
+
+@media screen and (max-width: 1600px) {
+  .contactItem {
+    font-size: 16px;
+  }
+  .contactItem > img {
+    width: 24px;
+  }
 }
 
 @media screen and (max-width: 800px) {
