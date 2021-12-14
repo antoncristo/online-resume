@@ -37,18 +37,21 @@ export const SlideShow = (props: SlideShowProps) => {
 
   return (
     <div className={classes.slideshow}>
-      {images.map((image, index) => {
-        return (
-          index === currentIndex && (
-            <div
-              key={image + index}
-              className={classes.imageHolderDiv}
-              style={{ backgroundImage: `url(${images[currentIndex]})` }}
-            ></div>
-          )
-        );
-      })}
-
+      {images.length ? (
+        images.map((image, index) => {
+          return (
+            index === currentIndex && (
+              <div
+                key={image + index}
+                className={classes.imageHolderDiv}
+                style={{ backgroundImage: `url(${images[currentIndex]})` }}
+              ></div>
+            )
+          );
+        })
+      ) : (
+        <div>No images to show</div>
+      )}
       <div className={classes.controller}>
         <NavigationButton icon={leftArrowIcon} onClick={previous} />
         <NavigationButton

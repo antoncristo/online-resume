@@ -14,7 +14,7 @@ export const ProjectContainer = (props: ProjectContainerProps) => {
   return (
     <div className={classes.projectContainer}>
       <Description index={index} project={project} />
-      <SlideShow images={project.screenshots} />
+      {project.screenshots ? <SlideShow images={project.screenshots} /> : null}
     </div>
   );
 };
