@@ -31,15 +31,14 @@ export const Tech = observer(() => {
           Proficient In creating and maintaining front-end functionality
         </div>
         <div>
-          Understand back-end concepts and capable of assiting in related tasks
+          Understand back-end concepts and capable of assisting in related tasks
         </div>
         <div>
           Implemented RESTful API's with various requirements, 3rd party API's
           and Databases
         </div>
         <div>
-          Constantly working on improving my skills and knowledge, Then share
-          and discuss it with my team
+          Constantly working on improving my skills and knowledge
         </div>
       </div>
       <div className={classes.projAndTechItem}>

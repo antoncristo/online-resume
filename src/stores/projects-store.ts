@@ -10,7 +10,7 @@ class ProjectsStore {
     {
       title: "T-Ask-In",
       storagePrefix: "taskin/",
-      link: "https://www.taskin-app.com",
+      link: "https://master.dnn3j07qayfho.amplifyapp.com/",
       description:
         "Create and Schedule your tasks. With a simple traffic light color scheme, the app helps to track your progress.",
       screenshots: undefined,

@@ -3,12 +3,11 @@ import cssIcon from "src/assets/svg/css3.svg";
 import typescriptIcon from "src/assets/svg/typescript.svg";
 import mobxIcon from "src/assets/svg/mobx.svg";
 import reduxIcon from "src/assets/svg/redux.svg";
-import htmlIocn from "src/assets/svg/html5.svg";
+import htmlIcon from "src/assets/svg/html5.svg";
 import awsIcon from "src/assets/svg/aws.svg";
 import nodeIcon from "src/assets/svg/nodejs.svg";
 import gitHubIcon from "src/assets/svg/github.svg";
 import gitIcon from "src/assets/svg/git.svg";
-import webpackICon from "src/assets/svg/webpack.svg";
 import scssIcon from "src/assets/svg/sass.svg";
 import { TechStackScheme } from "src/types/tech";
 
@@ -34,7 +33,7 @@ export const techStacks: TechStackScheme[] = [
       {
         itemName: "Redux",
         iconUrl: reduxIcon,
-        skillGrade: 8,
+        skillGrade: 8.5,
       },
       {
         itemName: "CSS",
@@ -48,13 +47,8 @@ export const techStacks: TechStackScheme[] = [
       },
       {
         itemName: "HTML",
-        iconUrl: htmlIocn,
+        iconUrl: htmlIcon,
         skillGrade: 8,
-      },
-      {
-        itemName: "Webpack",
-        iconUrl: webpackICon,
-        skillGrade: 5,
       },
     ],
   },
