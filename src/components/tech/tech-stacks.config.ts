@@ -6,7 +6,6 @@ import reduxIcon from "src/assets/svg/redux.svg";
 import htmlIcon from "src/assets/svg/html5.svg";
 import awsIcon from "src/assets/svg/aws.svg";
 import nodeIcon from "src/assets/svg/nodejs.svg";
-import gitHubIcon from "src/assets/svg/github.svg";
 import gitIcon from "src/assets/svg/git.svg";
 import scssIcon from "src/assets/svg/sass.svg";
 import { TechStackScheme } from "src/types/tech";
@@ -38,12 +37,12 @@ export const techStacks: TechStackScheme[] = [
       {
         itemName: "CSS",
         iconUrl: cssIcon,
-        skillGrade: 8.5,
+        skillGrade: 9.5,
       },
       {
         itemName: "SCSS",
         iconUrl: scssIcon,
-        skillGrade: 5,
+        skillGrade: 8,
       },
       {
         itemName: "HTML",
@@ -55,11 +54,6 @@ export const techStacks: TechStackScheme[] = [
   {
     stackTitle: "Other",
     stackItems: [
-      {
-        itemName: "Github",
-        iconUrl: gitHubIcon,
-        skillGrade: 8,
-      },
       {
         itemName: "Git",
         iconUrl: gitIcon,
