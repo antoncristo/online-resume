@@ -8,6 +8,24 @@ class ProjectsStore {
 
   private _projects: ProjectsScheme[] = [
     {
+      title: "React-EV",
+      storagePrefix: "",
+      link: "https://github.com/antoncristo/react-ev",
+      description:
+        "React components library, created with a modern, customizable design.",
+      screenshots: undefined,
+      techList: [
+        "React.js",
+        "Typescript",
+        "Styled-components",
+        "Storybook",
+        "Vite",
+        "Rollup",
+        "NPM",
+        "Github packages",
+      ],
+    },
+    {
       title: "T-Ask-In",
       storagePrefix: "taskin/",
       link: "https://master.dnn3j07qayfho.amplifyapp.com/",

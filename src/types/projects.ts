@@ -1,4 +1,4 @@
-export type ProjectBucketPrefix = "taskin/";
+export type ProjectBucketPrefix = "" | "taskin/";
 
 export type ProjectsScheme = {
   title: string;

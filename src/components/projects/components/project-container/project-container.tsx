@@ -13,7 +13,7 @@ type ProjectContainerProps = {
 export const ProjectContainer = (props: ProjectContainerProps) => {
   const { project, index } = props;
 
-  !project.screenshots &&
+  project.storagePrefix && !project.screenshots &&
     awsS3controller.getProjectAssetsPublicUrlFromS3ByPrefix(
       project.storagePrefix
     );
