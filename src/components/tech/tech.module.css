@@ -5,22 +5,5 @@
   flex-direction: column;
   min-height: 100vh;
 }
-.projAndTechItem {
-  width: 100%;
-}
-.techSummary {
-  margin-top: 20px;
-  margin-bottom: 50px;
-}
-.techSummary > div {
-  color: var(--main-black);
-  padding: 12px 6px;
-  text-align: center;
-  margin-bottom: 1px;
-  font-family: "outfit-600";
-}
-.techSummary > div:hover {
-  cursor: default;
-  color: #fff;
-  background-color: transparent;
-}
+
+

@@ -15,6 +15,23 @@
 .introduction .myName {
   color: var(--name-color);
 }
+.wordsCloud{
+  position: absolute;
+  top: 10px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.wordText{
+  height: 30px;
+  line-height: 30px;
+  font-size: 16px;
+  color: var(--main-gray);
+  font-family: "outfit-600";
+}
 
 @media screen and (max-width: 1600px) {
   .introduction {
@@ -29,5 +46,8 @@
     font-size: 40px;
     line-height: 50px;
     text-align: center;
+  }
+  .wordsCloud{
+    display: none;
   }
 }
