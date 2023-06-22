@@ -7,9 +7,6 @@
   color: #fff;
   border: 1px solid #fff;
 }
-.experienceItem:hover {
-  transform: scale(1.05, 1.05);
-}
 .durationAtCompany {
   font-family: "outfit-500";
   font-size: 20px;

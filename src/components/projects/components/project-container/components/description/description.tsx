@@ -5,11 +5,10 @@ import classes from "./description.module.css";
 
 type DescriptionProps = {
   project: ProjectsScheme;
-  index: number;
 };
 
 export const Description = (props: DescriptionProps) => {
-  const { project, index } = props;
+  const { project } = props;
 
   const showProjectInNewWindow = () => {
     project.link && window.open(project.link);
@@ -17,11 +16,6 @@ export const Description = (props: DescriptionProps) => {
 
   return (
     <div
-      style={{
-        boxShadow: `${
-          index % 2 ? "" : "-"
-        }10px 10px 10px 0px rgba(0, 0, 0, 0.1)`,
-      }}
       onClick={showProjectInNewWindow}
       className={classes.projectDescription}
     >

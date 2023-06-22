@@ -10,9 +10,6 @@
   text-align: center;
   border: 1px solid #fff;
 }
-.checkPointItem:hover {
-  transform: scale(1.05, 1.05);
-}
 .date {
   font-family: "outfit-500";
   font-size: 20px;

@@ -7,11 +7,10 @@ import { awsS3controller } from "src/storage";
 
 type ProjectContainerProps = {
   project: ProjectsScheme;
-  index: number;
 };
 
 export const ProjectContainer = (props: ProjectContainerProps) => {
-  const { project, index } = props;
+  const { project } = props;
 
   project.storagePrefix && !project.screenshots &&
     awsS3controller.getProjectAssetsPublicUrlFromS3ByPrefix(
@@ -20,7 +19,7 @@ export const ProjectContainer = (props: ProjectContainerProps) => {
 
   return (
     <div className={classes.projectContainer}>
-      <Description index={index} project={project} />
+      <Description project={project} />
       {project.screenshots ? <SlideShow images={project.screenshots} /> : null}
     </div>
   );

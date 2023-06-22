@@ -8,9 +8,12 @@
   font-size: 20px;
   line-height: 20px;
   width: fit-content;
-  height: 20px;
+  border: 2px solid var(--name-color);
+  padding: 10px;
+  border-radius: 6px;
 }
 .resumeButton:hover {
   cursor: pointer;
-  transform: scale(0.92, 0.92);
+  background-color: var(--name-color);
+  color: white;
 }
