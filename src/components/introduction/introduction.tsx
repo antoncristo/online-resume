@@ -20,7 +20,6 @@ export const Introduction = observer(() => {
   
   useEffect(() => {
     if(!isMobile && wordCloudRef.current){
-      console.log(width)
       anime({
         targets:".cloud .word",
         translateX: function(_: unknown, i: number) { 
