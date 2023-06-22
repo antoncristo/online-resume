@@ -1,5 +1,6 @@
-import { MouseEvent } from "react";
+import { MouseEvent,useEffect } from "react";
 import { observer } from "mobx-react";
+import anime from "animejs/lib/anime.es";
 import { ScrollMenuMapName, scrollMenuStore } from "src/stores";
 import { scrollMenuActions } from "src/actions";
 
@@ -37,8 +38,16 @@ export const ScrollMenu = observer(() => {
     }, 1000);
   };
 
+  useEffect(() => {
+    anime({
+      targets: '.container .staggered',
+      translateX: 'calc(100vw - 60px)',
+      delay: anime.stagger(100)
+    })
+  }, [])
+
   return (
-    <div className={classes.scrollMenu}>
+    <div className={[classes.scrollMenu,"container"].join(" ")}>
       {scrollMenuMap.map((menuMapItem, index) => {
         const _isActive = activeSectionIndex === index;
 
@@ -50,6 +59,7 @@ export const ScrollMenu = observer(() => {
             className={[
               classes.scrollButton,
               _isActive && classes.activeButton,
+              "staggered"
             ].join(" ")}
           >
             {index + 1}
