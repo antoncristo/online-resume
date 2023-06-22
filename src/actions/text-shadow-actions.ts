@@ -16,7 +16,3 @@ export const textShadowCoordRelativeToMouse = action(
   }
 );
 
-export const shouldPauseTextShadowEffect = action((isPaused: boolean) => {
-  const isMobilwWidth = window.innerWidth < 800;
-  textShadowStore.pauseEffect = isMobilwWidth ? false : isPaused;
-});

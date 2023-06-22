@@ -22,7 +22,6 @@ export const Projects = observer(() => {
       <div className={classes.projectsWrapper}>
         {projects.map((project, index) => (
           <ProjectContainer
-            index={index}
             project={project}
             key={JSON.stringify(project) + index}
           />

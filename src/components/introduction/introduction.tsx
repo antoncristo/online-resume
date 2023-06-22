@@ -10,7 +10,7 @@ import { observer } from "mobx-react";
 const SECTION_SCROLL_KEY: keyof ScrollMenuMapName = "INTRODUCTION";
 
 export const Introduction = observer(() => {
-  const { textShadowX, textShadowY, pauseEffect } = textShadowStore;
+  const { textShadowX, textShadowY } = textShadowStore;
   const introductionRef: RefObject<HTMLDivElement> = useRef(null);
 
   const onMouseMoveHandler = (event: MouseEvent<HTMLDivElement>) => {
@@ -20,20 +20,12 @@ export const Introduction = observer(() => {
     );
   };
 
-  const toggleTextShadowEffectOnMouseClick = (
-    event: MouseEvent<HTMLDivElement>
-  ) => {
-    pauseEffect && onMouseMoveHandler(event);
-    textShadowActions.shouldPauseTextShadowEffect(!pauseEffect);
-  };
-
   useInitScrollMapRef(SECTION_SCROLL_KEY, introductionRef);
 
   return (
     <div
       ref={introductionRef}
-      onMouseMove={pauseEffect ? () => {} : onMouseMoveHandler}
-      onClick={toggleTextShadowEffectOnMouseClick}
+      onMouseMove={onMouseMoveHandler}
       className={classes.introduction}
     >
       <div

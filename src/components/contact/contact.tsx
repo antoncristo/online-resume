@@ -40,7 +40,7 @@ const contactItems: ContactItemType[] = [
 ];
 
 export const Contact = observer(() => {
-  const { textShadowX, textShadowY, pauseEffect } = textShadowStore;
+  const { textShadowX, textShadowY } = textShadowStore;
 
   const contactRef: RefObject<HTMLDivElement> = useRef(null);
 
@@ -51,21 +51,13 @@ export const Contact = observer(() => {
     );
   };
 
-  const toggleTextShadowEffectOnMouseClick = (
-    event: MouseEvent<HTMLDivElement>
-  ) => {
-    pauseEffect && onMouseMoveHandler(event);
-    textShadowActions.shouldPauseTextShadowEffect(!pauseEffect);
-  };
-
   useInitScrollMapRef(SECTION_SCROLL_KEY, contactRef);
 
   return (
     <div className={classes.contact} ref={contactRef}>
       <SectionHeader sectionTitle="CONTACT INFO" />
       <div
-        onMouseMove={pauseEffect ? () => {} : onMouseMoveHandler}
-        onClick={toggleTextShadowEffectOnMouseClick}
+        onMouseMove={onMouseMoveHandler}
         className={classes.contactWrapper}
       >
         {contactItems.map((cItem, index) => (

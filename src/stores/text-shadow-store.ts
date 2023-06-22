@@ -5,14 +5,6 @@ class TextShadowStore {
     makeAutoObservable(this);
   }
 
-  private _pauseEffect: boolean = false;
-  get pauseEffect() {
-    return this._pauseEffect;
-  }
-  set pauseEffect(isPaused: boolean) {
-    this._pauseEffect = isPaused;
-  }
-
   private _textShadowX: number = 0;
   get textShadowX() {
     return this._textShadowX;
