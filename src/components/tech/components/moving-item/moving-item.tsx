@@ -1,11 +1,11 @@
 import { useEffect } from 'react';
+import { observer } from 'mobx-react';
 import anime from 'animejs/lib/anime.es';
 import { StackItem } from 'src/types';
 
 import { useMovement } from '../../useMovement';
 
 import classes from './moving-item.module.css';
-import { observer } from 'mobx-react';
 
 interface MovingItemProps {
 	index: number;
