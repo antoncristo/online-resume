@@ -1,27 +1,27 @@
-import { RefObject, useRef } from "react";
-import { SectionHeader } from "src/shared";
-import { observer } from "mobx-react";
-import { ScrollMenuMapName } from "src/stores";
-import { useInitScrollMapRef } from "src/hooks";
+import { RefObject, useRef } from 'react';
+import { SectionHeader } from 'src/shared';
+import { observer } from 'mobx-react';
+import { ScrollMenuMapName } from 'src/stores';
+import { useInitScrollMapRef } from 'src/hooks';
 
-import classes from "./tech.module.css";
-import { MovingItem } from "./components";
+import classes from './tech.module.css';
+import { MovingItem } from './components';
 
-const SECTION_SCROLL_KEY: keyof ScrollMenuMapName = "TECH";
+const SECTION_SCROLL_KEY: keyof ScrollMenuMapName = 'TECH';
 
 export const Tech = observer(() => {
-  const techRef: RefObject<HTMLDivElement> = useRef(null);
+	const techRef: RefObject<HTMLDivElement> = useRef(null);
 
-  useInitScrollMapRef(SECTION_SCROLL_KEY, techRef);
+	useInitScrollMapRef(SECTION_SCROLL_KEY, techRef);
 
-  return (
-    <div ref={techRef} className={classes.tech}>
-      <SectionHeader sectionTitle="Tech Skills" />
-      <div className={classes.techGround}>
-        {
-          [1,2,3,4,5,6].map((item,index) => <MovingItem index={index} key={item}/>)
-        }
-      </div>
-    </div>
-  );
+	return (
+		<div ref={techRef} className={classes.tech}>
+			<SectionHeader sectionTitle='Tech Skills' />
+			<div className={classes.techGround}>
+				{[1, 2, 3, 4, 5, 6].map((item, index) => (
+					<MovingItem index={index} key={item} />
+				))}
+			</div>
+		</div>
+	);
 });

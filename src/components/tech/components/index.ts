@@ -1,1 +1,1 @@
-export * from "./moving-item"
+export * from './moving-item';

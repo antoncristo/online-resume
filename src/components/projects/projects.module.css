@@ -1,11 +1,11 @@
 .projects {
-  min-height: 100vh;
-  padding-bottom: 40px;
+	min-height: 100vh;
+	padding-bottom: 40px;
 }
 .projectsWrapper {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }

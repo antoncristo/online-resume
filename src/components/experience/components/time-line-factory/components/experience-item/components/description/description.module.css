@@ -1,35 +1,35 @@
 .description {
-  font-family: "outfit-500";
-  white-space: pre-wrap;
+	font-family: 'outfit-500';
+	white-space: pre-wrap;
 }
 .title {
-  font-size: 24px;
-  font-family: "outfit-700";
-  animation: rotateColor 30s linear infinite;
+	font-size: 24px;
+	font-family: 'outfit-700';
+	animation: rotateColor 30s linear infinite;
 }
 
 @media screen and (max-width: 800px) {
-  .description {
-    margin-top: 10px;
-    border-right: 2px solid #fff;
-    padding-right: 5px;
-  }
+	.description {
+		margin-top: 10px;
+		border-right: 2px solid #fff;
+		padding-right: 5px;
+	}
 }
 
 @keyframes rotateColor {
-  0% {
-    color: var(--bg-1);
-  }
-  25% {
-    color: var(--bg-2);
-  }
-  50% {
-    color: var(--bg-3);
-  }
-  75% {
-    color: var(--bg-4);
-  }
-  100% {
-    color: var(--bg-1);
-  }
+	0% {
+		color: var(--bg-1);
+	}
+	25% {
+		color: var(--bg-2);
+	}
+	50% {
+		color: var(--bg-3);
+	}
+	75% {
+		color: var(--bg-4);
+	}
+	100% {
+		color: var(--bg-1);
+	}
 }

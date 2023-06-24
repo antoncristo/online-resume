@@ -1,1 +1,1 @@
-export { DirectionHelper } from "./direction-helper";
+export { DirectionHelper } from './direction-helper';

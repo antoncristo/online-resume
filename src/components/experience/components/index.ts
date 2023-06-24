@@ -1,1 +1,1 @@
-export * from "./time-line-factory";
+export * from './time-line-factory';

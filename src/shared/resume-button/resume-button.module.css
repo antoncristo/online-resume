@@ -1,19 +1,19 @@
 .resumeButton {
-  position: relative;
-  z-index: 200;
-  color: var(--name-color);
-  text-shadow: none;
-  font-family: "outfit-900";
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-  font-size: 20px;
-  line-height: 20px;
-  width: fit-content;
-  border: 2px solid var(--name-color);
-  padding: 10px;
-  border-radius: 6px;
+	position: relative;
+	z-index: 200;
+	color: var(--name-color);
+	text-shadow: none;
+	font-family: 'outfit-900';
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+	font-size: 20px;
+	line-height: 20px;
+	width: fit-content;
+	border: 2px solid var(--name-color);
+	padding: 10px;
+	border-radius: 6px;
 }
 .resumeButton:hover {
-  cursor: pointer;
-  background-color: var(--name-color);
-  color: white;
+	cursor: pointer;
+	background-color: var(--name-color);
+	color: white;
 }

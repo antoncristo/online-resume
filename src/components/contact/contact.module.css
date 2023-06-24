@@ -1,35 +1,35 @@
 .contact {
-  min-height: 100vh;
+	min-height: 100vh;
 }
 .contactWrapper {
-  height: calc(100vh - var(--section-header-height));
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 40px 20px;
+	height: calc(100vh - var(--section-header-height));
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 40px 20px;
 }
 .contactFooter {
-  color: #fff;
-  font-size: 60px;
-  font-family: "outfit-900";
-  margin-top: auto;
-  cursor: default;
+	color: #fff;
+	font-size: 60px;
+	font-family: 'outfit-900';
+	margin-top: auto;
+	cursor: default;
 }
 .resumeButtonWrapper {
-  border-bottom: 1px solid #fff;
-  padding: 12px 0;
+	border-bottom: 1px solid #fff;
+	padding: 12px 0;
 }
 
 @media screen and (max-width: 1600px) {
-  .contactWrapper {
-    height: calc(100vh - var(--section-header-smaller-height));
-  }
+	.contactWrapper {
+		height: calc(100vh - var(--section-header-smaller-height));
+	}
 }
 
 @media screen and (max-width: 800px) {
-  .contactFooter {
-    font-size: 24px;
-    text-align: center;
-  }
+	.contactFooter {
+		font-size: 24px;
+		text-align: center;
+	}
 }

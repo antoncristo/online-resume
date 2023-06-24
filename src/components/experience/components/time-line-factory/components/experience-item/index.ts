@@ -1,1 +1,1 @@
-export { ExperienceItemComponent } from "./experience-item";
+export { ExperienceItemComponent } from './experience-item';

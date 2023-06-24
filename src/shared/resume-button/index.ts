@@ -1,1 +1,1 @@
-export { ResumeButton } from "./resume-button";
+export { ResumeButton } from './resume-button';

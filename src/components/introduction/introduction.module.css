@@ -1,53 +1,53 @@
 .introduction {
-  position: relative;
-  height: 100vh;
-  color: #fff;
-  font-size: 100px;
-  line-height: 110px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: "outfit-900";
-  cursor: default;
-  user-select: none;
+	position: relative;
+	height: 100vh;
+	color: #fff;
+	font-size: 100px;
+	line-height: 110px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-family: 'outfit-900';
+	cursor: default;
+	user-select: none;
 }
 .introduction .myName {
-  color: var(--name-color);
+	color: var(--name-color);
 }
-.wordsCloud{
-  position: absolute;
-  top: 10px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+.wordsCloud {
+	position: absolute;
+	top: 10px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
 }
-.wordText{
-  height: 30px;
-  line-height: 30px;
-  font-size: 16px;
-  color: var(--main-gray);
-  font-family: "outfit-600";
+.wordText {
+	height: 30px;
+	line-height: 30px;
+	font-size: 16px;
+	color: var(--main-gray);
+	font-family: 'outfit-600';
 }
 
 @media screen and (max-width: 1600px) {
-  .introduction {
-    font-size: 80px;
-    line-height: 90px;
-  }
+	.introduction {
+		font-size: 80px;
+		line-height: 90px;
+	}
 }
 
 @media screen and (max-width: 800px) {
-  .introduction {
-    padding: 0 25px;
-    font-size: 40px;
-    line-height: 50px;
-    text-align: center;
-  }
-  .wordsCloud{
-    display: none;
-  }
+	.introduction {
+		padding: 0 25px;
+		font-size: 40px;
+		line-height: 50px;
+		text-align: center;
+	}
+	.wordsCloud {
+		display: none;
+	}
 }

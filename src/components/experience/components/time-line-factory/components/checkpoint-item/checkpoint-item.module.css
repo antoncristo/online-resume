@@ -1,17 +1,17 @@
 .checkPointItem {
-  position: relative;
-  z-index: 2;
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 15px;
-  border-radius: 4px;
-  font-size: 24px;
-  font-family: "outfit-900";
-  color: #fff;
-  text-align: center;
-  border: 1px solid #fff;
+	position: relative;
+	z-index: 2;
+	background-color: rgba(0, 0, 0, 0.6);
+	padding: 15px;
+	border-radius: 4px;
+	font-size: 24px;
+	font-family: 'outfit-900';
+	color: #fff;
+	text-align: center;
+	border: 1px solid #fff;
 }
 .date {
-  font-family: "outfit-500";
-  font-size: 20px;
-  margin-bottom: 10px;
+	font-family: 'outfit-500';
+	font-size: 20px;
+	margin-bottom: 10px;
 }

@@ -1,40 +1,40 @@
 .companyAndRole {
-  min-width: 200px;
-  font-family: "outfit-500";
-  border-right: 2px solid #fff;
-  padding-right: 10px;
-  margin-right: 10px;
+	min-width: 200px;
+	font-family: 'outfit-500';
+	border-right: 2px solid #fff;
+	padding-right: 10px;
+	margin-right: 10px;
 }
 .title {
-  font-size: 24px;
-  font-family: "outfit-700";
-  animation: rotateColor 30s linear infinite;
+	font-size: 24px;
+	font-family: 'outfit-700';
+	animation: rotateColor 30s linear infinite;
 }
 .companyAndRole > div:nth-child(2) {
-  margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 
 @media screen and (max-width: 800px) {
-  .companyAndRole {
-    padding-right: 0;
-    margin-right: 0;
-  }
+	.companyAndRole {
+		padding-right: 0;
+		margin-right: 0;
+	}
 }
 
 @keyframes rotateColor {
-  0% {
-    color: var(--bg-1);
-  }
-  25% {
-    color: var(--bg-2);
-  }
-  50% {
-    color: var(--bg-3);
-  }
-  75% {
-    color: var(--bg-4);
-  }
-  100% {
-    color: var(--bg-1);
-  }
+	0% {
+		color: var(--bg-1);
+	}
+	25% {
+		color: var(--bg-2);
+	}
+	50% {
+		color: var(--bg-3);
+	}
+	75% {
+		color: var(--bg-4);
+	}
+	100% {
+		color: var(--bg-1);
+	}
 }
