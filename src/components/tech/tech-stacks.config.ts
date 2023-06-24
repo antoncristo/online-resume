@@ -3,11 +3,12 @@ import cssIcon from 'src/assets/svg/css3.svg';
 import typescriptIcon from 'src/assets/svg/typescript.svg';
 import mobxIcon from 'src/assets/svg/mobx.svg';
 import reduxIcon from 'src/assets/svg/redux.svg';
-import htmlIcon from 'src/assets/svg/html5.svg';
 import awsIcon from 'src/assets/svg/aws.svg';
 import nodeIcon from 'src/assets/svg/nodejs.svg';
 import gitIcon from 'src/assets/svg/git.svg';
 import scssIcon from 'src/assets/svg/sass.svg';
+import firebaseIcon from 'src/assets/svg/firebase.svg';
+import viteIcon from 'src/assets/svg/vite.svg';
 import { TechStackScheme } from 'src/types/tech';
 
 export const wordsCloud: string[] = [
@@ -55,13 +56,8 @@ export const techStacks: TechStackScheme[] = [
 				skillGrade: 9.5
 			},
 			{
-				itemName: 'SCSS',
+				itemName: 'Styled components',
 				iconUrl: scssIcon,
-				skillGrade: 8
-			},
-			{
-				itemName: 'HTML',
-				iconUrl: htmlIcon,
 				skillGrade: 8
 			}
 		]
@@ -75,6 +71,11 @@ export const techStacks: TechStackScheme[] = [
 				skillGrade: 5
 			},
 			{
+				itemName: 'vite',
+				iconUrl: viteIcon,
+				skillGrade: 9
+			},
+			{
 				itemName: 'AWS',
 				iconUrl: awsIcon,
 				skillGrade: 4
@@ -83,6 +84,11 @@ export const techStacks: TechStackScheme[] = [
 				itemName: 'Node.js',
 				iconUrl: nodeIcon,
 				skillGrade: 6
+			},
+			{
+				itemName: 'Firebase',
+				iconUrl: firebaseIcon,
+				skillGrade: 10
 			}
 		]
 	}
