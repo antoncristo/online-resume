@@ -1,1 +1,1 @@
-export { CompanyAndRole } from "./company-and-role";
+export { CompanyAndRole } from './company-and-role';

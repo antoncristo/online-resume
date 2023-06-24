@@ -1,7 +1,7 @@
-export type ContactItemVariant = "LINK" | "TEXT";
+export type ContactItemVariant = 'LINK' | 'TEXT';
 
 export type ContactItem = {
-  icon?: string;
-  contactInfo: string;
-  variant: ContactItemVariant;
+	icon?: string;
+	contactInfo: string;
+	variant: ContactItemVariant;
 };

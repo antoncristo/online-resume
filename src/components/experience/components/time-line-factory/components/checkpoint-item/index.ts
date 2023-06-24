@@ -1,1 +1,1 @@
-export { CheckpointItem } from "./checkpoint-item";
+export { CheckpointItem } from './checkpoint-item';

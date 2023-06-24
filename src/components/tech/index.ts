@@ -1,1 +1,1 @@
-export { Tech } from "./tech";
+export { Tech } from './tech';

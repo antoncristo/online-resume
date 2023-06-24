@@ -1,16 +1,16 @@
 .timeLineFactory {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  cursor: default;
-  user-select: none;
-  margin: 20px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	cursor: default;
+	user-select: none;
+	margin: 20px;
 }
 
 @media screen and (max-width: 800px) {
-  .timeLineFactory {
-    margin: 0;
-  }
+	.timeLineFactory {
+		margin: 0;
+	}
 }

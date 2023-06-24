@@ -1,2 +1,1 @@
-export * from "./tech-stack";
-export * from "./tech-evaluation";
+export * from './moving-item';

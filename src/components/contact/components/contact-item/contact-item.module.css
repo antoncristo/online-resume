@@ -1,37 +1,37 @@
 .contactItem {
-  width: fit-content;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 15px 0;
-  border-bottom: 1px solid #fff;
-  font-size: 20px;
-  font-family: "outfit-600";
+	width: fit-content;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 15px 0;
+	border-bottom: 1px solid #fff;
+	font-size: 20px;
+	font-family: 'outfit-600';
 }
 .contactItem > img {
-  width: 24px;
-  margin-right: 10px;
+	width: 24px;
+	margin-right: 10px;
 }
 .contactItem:hover {
-  cursor: pointer;
-  transform: scale(0.92, 0.92);
-  color: white;
+	cursor: pointer;
+	transform: scale(0.92, 0.92);
+	color: white;
 }
 
 @media screen and (max-width: 1600px) {
-  .contactItem {
-    font-size: 16px;
-  }
-  .contactItem > img {
-    width: 24px;
-  }
+	.contactItem {
+		font-size: 16px;
+	}
+	.contactItem > img {
+		width: 24px;
+	}
 }
 
 @media screen and (max-width: 800px) {
-  .contactItem {
-    font-size: 14px;
-  }
-  .contactItem > img {
-    width: 20px;
-  }
+	.contactItem {
+		font-size: 14px;
+	}
+	.contactItem > img {
+		width: 20px;
+	}
 }

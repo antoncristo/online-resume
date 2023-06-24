@@ -1,15 +1,15 @@
 .projectContainer {
-  padding: 20px;
-  margin-top: 40px;
-  display: flex;
-  flex-direction: column;
-  width: 65%;
-  max-width: 1000px;
+	padding: 20px;
+	margin-top: 40px;
+	display: flex;
+	flex-direction: column;
+	width: 65%;
+	max-width: 1000px;
 }
 
 @media screen and (max-width: 800px) {
-  .projectContainer {
-    flex-direction: column;
-    width: 100%;
-  }
+	.projectContainer {
+		flex-direction: column;
+		width: 100%;
+	}
 }
