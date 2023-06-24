@@ -5,6 +5,7 @@ import { ScrollMenuMapName } from "src/stores";
 import { useInitScrollMapRef } from "src/hooks";
 
 import classes from "./tech.module.css";
+import { MovingItem } from "./components";
 
 const SECTION_SCROLL_KEY: keyof ScrollMenuMapName = "TECH";
 
@@ -16,6 +17,11 @@ export const Tech = observer(() => {
   return (
     <div ref={techRef} className={classes.tech}>
       <SectionHeader sectionTitle="Tech Skills" />
+      <div className={classes.techGround}>
+        {
+          [1,2,3,4,5,6].map((item,index) => <MovingItem index={index} key={item}/>)
+        }
+      </div>
     </div>
   );
 });

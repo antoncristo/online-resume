@@ -10,7 +10,7 @@ import gitIcon from "src/assets/svg/git.svg";
 import scssIcon from "src/assets/svg/sass.svg";
 import { TechStackScheme } from "src/types/tech";
 
-export const wordsCloud:string[] = ["Responsive","Pixel Perfect","Reusable","Clean","Readable","Maintainable","Testable","Design","User Friendly","Modern","Creative","Powerful"]
+export const wordsCloud:string[] = ["Responsive","Pixel Perfect","Reusable","Clean","Readable","Maintainable","Testable","Powerful","User Friendly","Modern","Creative","Design"]
 
 export const techStacks: TechStackScheme[] = [
   {
