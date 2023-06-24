@@ -1,11 +1,11 @@
-import classes from "./section-header.module.css";
+import classes from './section-header.module.css';
 
 type SectionHeaderProps = {
-  sectionTitle: string;
+	sectionTitle: string;
 };
 
 export const SectionHeader = (props: SectionHeaderProps) => {
-  const { sectionTitle } = props;
+	const { sectionTitle } = props;
 
-  return <div className={classes.sectionHeader}>{sectionTitle}</div>;
+	return <div className={classes.sectionHeader}>{sectionTitle}</div>;
 };

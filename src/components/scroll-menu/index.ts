@@ -1,1 +1,1 @@
-export { ScrollMenu } from "./scroll-menu";
+export { ScrollMenu } from './scroll-menu';

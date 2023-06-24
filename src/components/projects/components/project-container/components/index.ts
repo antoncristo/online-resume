@@ -1,2 +1,2 @@
-export * from "./description";
-export * from "./slideshow";
+export * from './description';
+export * from './slideshow';

@@ -1,23 +1,23 @@
 .app {
-  animation: rotateBackgrounColor 30s linear 0s infinite;
-  height: 100vh;
-  overflow-y: auto;
+	animation: rotateBackgrounColor 30s linear 0s infinite;
+	height: 100vh;
+	overflow-y: auto;
 }
 
 @keyframes rotateBackgrounColor {
-  0% {
-    background-color: var(--bg-1);
-  }
-  25% {
-    background-color: var(--bg-2);
-  }
-  50% {
-    background-color: var(--bg-3);
-  }
-  75% {
-    background-color: var(--bg-4);
-  }
-  100% {
-    background-color: var(--bg-1);
-  }
+	0% {
+		background-color: var(--bg-1);
+	}
+	25% {
+		background-color: var(--bg-2);
+	}
+	50% {
+		background-color: var(--bg-3);
+	}
+	75% {
+		background-color: var(--bg-4);
+	}
+	100% {
+		background-color: var(--bg-1);
+	}
 }

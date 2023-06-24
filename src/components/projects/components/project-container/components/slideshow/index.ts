@@ -1,1 +1,1 @@
-export { SlideShow } from "./slideshow";
+export { SlideShow } from './slideshow';

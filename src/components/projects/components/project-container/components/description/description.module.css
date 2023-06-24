@@ -1,59 +1,58 @@
 .projectDescription {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  padding-left: 20px;
-  padding-top: 20px;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-  box-shadow: -10px 10px 10px 0px rgba(0, 0, 0, 0.1);
-  border: 1px solid transparent;
-  border-radius: 6px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding-left: 20px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+	box-shadow: -10px 10px 10px 0px rgba(0, 0, 0, 0.1);
+	border: 1px solid transparent;
+	border-radius: 6px;
 }
 .projectDescription:hover {
-  cursor: pointer;
-  border: 1px solid var(--main-gray);
-  
+	cursor: pointer;
+	border: 1px solid var(--main-gray);
 }
 .projectDescription:hover .title {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 .title {
-  font-family: "outfit-900";
-  font-size: 32px;
-  line-height: 32px;
-  margin-bottom: 10px;
-  color: #dcdcdc;
-  text-shadow: 0px 0px 1px #000;
-  display: flex;
-  align-items: center;
+	font-family: 'outfit-900';
+	font-size: 32px;
+	line-height: 32px;
+	margin-bottom: 10px;
+	color: #dcdcdc;
+	text-shadow: 0px 0px 1px #000;
+	display: flex;
+	align-items: center;
 }
 .title > img {
-  margin-left: 10px;
-  margin-top: 6px;
+	margin-left: 10px;
+	margin-top: 6px;
 }
 .description {
-  font-family: "outfit-600";
-  max-width: 600px;
-  font-size: 18px;
-  line-height: 25px;
-  margin-bottom: 20px;
-  color: var(--main-black);
+	font-family: 'outfit-600';
+	max-width: 600px;
+	font-size: 18px;
+	line-height: 25px;
+	margin-bottom: 20px;
+	color: var(--main-black);
 }
 .techListWrapper {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
 }
 .techListWrapper > div {
-  width: fit-content;
-  padding: 5px 7px;
-  margin-right: 10px;
-  margin-bottom: 10px;
-  font-family: "outfit-500";
-  color: var(--main-gray);
-  text-shadow: 0px 0px 1px #000;
-  border: 1px solid var(--main-gray);
-  background-color: var(--main-black);
-  border-radius: 6px;
+	width: fit-content;
+	padding: 5px 7px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	font-family: 'outfit-500';
+	color: var(--main-gray);
+	text-shadow: 0px 0px 1px #000;
+	border: 1px solid var(--main-gray);
+	background-color: var(--main-black);
+	border-radius: 6px;
 }

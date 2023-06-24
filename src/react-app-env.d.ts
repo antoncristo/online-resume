@@ -1,4 +1,4 @@
 /// <reference types="react-scripts" />
 
-declare module "*.module.css";
-declare module "*.svg";
+declare module '*.module.css';
+declare module '*.svg';

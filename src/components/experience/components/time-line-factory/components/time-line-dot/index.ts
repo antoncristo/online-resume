@@ -1,1 +1,1 @@
-export { TimeLineDot } from "./time-line-dot";
+export { TimeLineDot } from './time-line-dot';
