@@ -26,6 +26,26 @@ class ProjectsStore {
 			]
 		},
 		{
+			title: 'Cook-E',
+			storagePrefix: 'cooke/',
+			link: 'https://main.d3uhn2n4y7fxos.amplifyapp.com',
+			description: 'Recipes Book Keeper - keep your hobby online.',
+			screenshots: undefined,
+			techList: [
+				'React.js',
+				'Typescript',
+				'MobX',
+				'react-query',
+				'Styled-components',
+				'Vite',
+				'Docker',
+				'NodeJS',
+				'REST API',
+				'Firebase AUTH',
+				'Firebase Database'
+			]
+		},
+		{
 			title: 'T-Ask-In',
 			storagePrefix: 'taskin/',
 			link: 'https://master.dnn3j07qayfho.amplifyapp.com/',

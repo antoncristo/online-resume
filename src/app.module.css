@@ -2,6 +2,7 @@
 	animation: rotateBackgrounColor 30s linear 0s infinite;
 	height: 100vh;
 	overflow-y: auto;
+	overflow-x: hidden;
 }
 
 @keyframes rotateBackgrounColor {
