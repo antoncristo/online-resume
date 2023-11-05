@@ -7,7 +7,6 @@ import awsIcon from 'src/assets/svg/aws.svg';
 import nodeIcon from 'src/assets/svg/nodejs.svg';
 import gitIcon from 'src/assets/svg/git.svg';
 import scssIcon from 'src/assets/svg/sass.svg';
-import firebaseIcon from 'src/assets/svg/firebase.svg';
 import viteIcon from 'src/assets/svg/vite.svg';
 import dockerIcon from 'src/assets/svg/docker.svg';
 import { TechStackScheme } from 'src/types/tech';
