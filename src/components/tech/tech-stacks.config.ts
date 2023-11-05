@@ -9,6 +9,7 @@ import gitIcon from 'src/assets/svg/git.svg';
 import scssIcon from 'src/assets/svg/sass.svg';
 import firebaseIcon from 'src/assets/svg/firebase.svg';
 import viteIcon from 'src/assets/svg/vite.svg';
+import dockerIcon from 'src/assets/svg/docker.svg';
 import { TechStackScheme } from 'src/types/tech';
 
 export const wordsCloud: string[] = [
@@ -36,7 +37,7 @@ export const techStacks: TechStackScheme[] = [
 				skillGrade: 9
 			},
 			{
-				itemName: 'Typescript',
+				itemName: 'Javascript/Typescript',
 				iconUrl: typescriptIcon,
 				skillGrade: 8
 			},
@@ -51,7 +52,7 @@ export const techStacks: TechStackScheme[] = [
 				skillGrade: 8.5
 			},
 			{
-				itemName: 'CSS',
+				itemName: 'CSS/SCSS',
 				iconUrl: cssIcon,
 				skillGrade: 9.5
 			},
@@ -81,14 +82,20 @@ export const techStacks: TechStackScheme[] = [
 				skillGrade: 4
 			},
 			{
+				itemName: 'Docker',
+				skillGrade: 6,
+				iconUrl: dockerIcon
+			},
+			{
 				itemName: 'Node.js',
 				iconUrl: nodeIcon,
 				skillGrade: 6
 			},
+
 			{
-				itemName: 'Firebase',
-				iconUrl: firebaseIcon,
-				skillGrade: 10
+				itemName: '& MANY MORE...',
+				iconUrl: '',
+				skillGrade: 100
 			}
 		]
 	}

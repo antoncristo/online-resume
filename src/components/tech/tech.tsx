@@ -5,9 +5,9 @@ import { ScrollMenuMapName } from 'src/stores';
 import { useInitScrollMapRef } from 'src/hooks';
 
 import { techStacks } from './tech-stacks.config';
-import { MovingItem } from './components';
 
 import classes from './tech.module.css';
+import { TechItem } from './components';
 
 const SECTION_SCROLL_KEY: keyof ScrollMenuMapName = 'TECH';
 
@@ -22,12 +22,7 @@ export const Tech = observer(() => {
 			<SectionHeader sectionTitle='Tech Skills' />
 			<div className={classes.techGround}>
 				{icons.map((item, index) => (
-					<MovingItem
-						index={index}
-						numberOfItems={6}
-						key={item.itemName}
-						techItem={item}
-					/>
+					<TechItem key={item.itemName + index} techItem={item} />
 				))}
 			</div>
 		</div>

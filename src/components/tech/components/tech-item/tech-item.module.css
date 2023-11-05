@@ -1,0 +1,47 @@
+.techItem {
+	flex-basis: 280px;
+	max-height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+	.techItem {
+		justify-content: flex-start;
+	}
+}
+
+.techItem > img {
+	width: 36px;
+	aspect-ratio: 1/1;
+	margin-inline-end: 16px;
+	filter: drop-shadow(1px 1px 3px black);
+}
+
+.title {
+	font-family: 'outfit-600';
+	color: var(--name-color);
+	white-space: nowrap;
+	font-size: 22px;
+	text-shadow: -0.3px -0.3px 3px black;
+	animation: movingLightText 3.3s ease-in-out infinite;
+}
+
+@keyframes movingLightText {
+	0% {
+		text-shadow: -0.3px -0.3px 3px black;
+	}
+	25% {
+		text-shadow: 0.3px -0.3px 3px black;
+	}
+	50% {
+		text-shadow: 0.3px 0.3px 3px white;
+	}
+	75% {
+		text-shadow: -0.3px 0.3px 3px black;
+	}
+	100% {
+		text-shadow: -0.3px -0.3px 3px black;
+	}
+}
